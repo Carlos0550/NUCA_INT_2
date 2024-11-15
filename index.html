@@ -3,185 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Zeus Gym</title>
-
-    <link rel="stylesheet" href="./src/styles.css">
-    <title>Zeuz Gym - Transforma tu vida</title>
-    <meta name="title" content="Zeuz Gym - Transforma tu vida" />
-    <meta name="description" content="" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="Zeuz Gym - Transforma tu vida" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="Zeuz Gym - Transforma tu vida" />
-    <meta property="twitter:description" content="" />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-
-    <link rel="shortcut icon" href="./src/assets/IconoPestaña/ZeusIcon.webp" type="image/x-icon">
+    <title>ZeusGym - Tienda</title>
+    <link rel="stylesheet" href="./shop.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav-pc">
-            <picture class="logo__container">
-                <img src="./src/assets/logo.png" alt="logo">
-            </picture>
-            <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about">Sobre nosotros</a></li>
-                <li><a href="./ecommerce/shop.html">Tienda</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="./src/SignIn/signin.html">Ingresar</a></li>
+    <header class="shop__header">
+        <picture class="shop__picture">
+            <img src="./assets/logo.png" alt="navbarIcon">
+        </picture>
+        <nav class="shop__nav">
+            <ul class="shop__ul">
+                <li class="shop-ul__li"><a href="/ecommerce/shop.html">
+                        <img src="./assets/home.svg" alt="home_icon" width="24" height="auto">
+                        Inicio
+                    </a></li>
+                <li><a>
+                        <img src="./assets/cart.svg" alt="cart_icon" width="24" height="auto">
+                        Carrito
+                    </a></li>
+                <li class="shop-ul__li"><a href="">
+                        <img src="./assets/account.svg" alt="cart_icon" width="24" height="auto">
+                        Mi cuenta
+                    </a></li>
             </ul>
         </nav>
-
-        <nav class="nav-phone">
-            <div class="nav-phone__brand">
-                <picture class="logo__container">
-                    <img src="./src/assets/logo.png" alt="logo">
-                </picture>
-                <h1 style="color: white;">Zeus Gym</h1>
-            </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <label for="menu-toggle" class="nav-phone__icon">
-                <img src="./src/assets/menuIcon.svg" alt="icono de menú">
-            </label>
-            <div class="nav-phone__menu">
-                <h1 class="nav-phone__title">¿Que podemos hacer por ti?</h1>
-                <ul>
-
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#about">Sobre nosotros</a></li>
-                    <li><a href="#shop">Tienda</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="./src/SignIn/signin.html">Ingresar</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
+    <section id="shop-products__wrapper">
+        <h2 id="welcome__h1">Bienvenidos a ZeusGym - Shop</h2>
+        <h3 class="featured-products__h3">Explora nuestros productos destacados</h3>
 
-    <main>
-        <section class="hero" id="hero">
-            <picture class="hero__image">
-                <img src="https://th.bing.com/th/id/OIG4..EVeLVGw33iBu7OjdvhA?pid=ImgGn" alt="hero_img">
-            </picture>
-            <div class="hero__container">
-                <div class="hero_title">Transforma tu Cuerpo, Transforma tu Vida</div>
-                <div class="hero__description">
-                    Descubre el mejor entrenamiento personalizado en un ambiente de motivación y apoyo. Ya sea que estés
-                    empezando o buscando llevar tu rendimiento al siguiente nivel, ¡nuestro gimnasio está listo para
-                    acompañarte en cada paso!
-                </div>
-                <a href="#" class="hero__cta">Únete Hoy</a>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="about__content">
-                <h2 class="about__title">Conócenos</h2>
-                <p class="about__description">
-                    En nuestro gimnasio, nos esforzamos por crear un ambiente de apoyo y motivación para ayudarte a
-                    alcanzar tus objetivos. Contamos con instalaciones modernas y un equipo de profesionales capacitados
-                    que te guiarán en cada paso de tu transformación. Ya sea que estés buscando mejorar tu salud, ganar
-                    fuerza o simplemente mantenerte activo, estamos aquí para ti.
-                </p>
-                <p class="about__description">
-                    Con equipos de última generación y clases diseñadas para todos los niveles, nuestro gimnasio ofrece
-                    un espacio donde cada entrenamiento es una oportunidad para mejorar. ¡Únete a nuestra comunidad y
-                    transforma tu vida hoy mismo!
-                </p>
-            </div>
-            <picture class="about__images">
-                <img src="https://th.bing.com/th/id/OIG3.vE0yJtRcptnLFMXM9.Jp?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
-            </picture>
-            <picture class="about__images">
-                <img src="https://th.bing.com/th/id/OIG4.ujMpAVvlri5cc0VliR5G?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
-            </picture>
-            <picture class="about__images">
-                <img src="https://th.bing.com/th/id/OIG3.y4sXD.9b9RHd3qabpOt3?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
-            </picture>
-            <picture class="about__images">
-                <img src="https://th.bing.com/th/id/OIG3._MnYMnhynj837Gb4jkIq?pid=ImgGn" alt="">
-            </picture>
-
-            <div class="about__content">
-                <h2 class="about__title">Nuestro equipo</h2>
-                <p class="about__description">
-                    Con nuestro equipo de expertos, estamos comprometidos a ayudarte a alcanzar tus metas. Contamos con
-                    un equipo de apoyo de personal capacitado que te ayudará a tomar decisiones informadas y tomar
-                    decisiones eficazmente. ¡Ud. estará en nuestra comunidad y estará listo para alcanzar tus objetivos!
-                </p>
-            </div>
-            <picture class="about__images-coachs">
-                <img src="https://th.bing.com/th/id/OIG3.wF3L0Sf2QVFIFoW1FbmG?pid=ImgGn" alt="">
-            </picture>
-        </section>
-
-        
-        <section class="contact" id="contact">
-            <div class="contact__information">
-                <h1 class="contact__title">Encuéntranos en nuestra sucursal</h1>
-                <li>Av. Sargento Cabral 1111 / Posadas-Misiones</li>
-                <li>Horarios de atención: Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</li>
-                <li>Sabados de 9:00 a.m. a 12:00 p.m.</li>
-            </div>
-            <div class="contact__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65028517.71864501!2d-126.47176830981553!3d-5.851996470249331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be3051660dc9%3A0xec003389d24461a9!2sGIMNASIO%20ZEUS!5e0!3m2!1ses-419!2sar!4v1727804940528!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-
-        <section class="information__contact">
-            <div class="information__content">
-                <div class="information__subtitles">
-                    <h1 class="contact__title">Contácto</h1>
-                    <h3 class="contact__title-description">Ponte en contacto con nuestras redes</h3>
-                </div>
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <picture class="icon__container">
-                            <img src="./src/assets/igIcon.svg" alt="Instagram Icon">
-                        </picture>
-                        <p>@zeusgym</p>
-
-                        <picture class="icon__container">
-                            <img src="./src/assets/facebookIcon.svg" alt="">
-                        </picture>
-                        <p>@zeusgym</p>
-                    </li>
-                    <li class="contact__item">Teléfonos: 011 12345678</li>
-                    <li class="contact__item">Correo: contacto@zeusgym.com</li>
-                </ul>
-            </div>
-
-            <div class="information__content">
-                <h2 class="contact__title-description">¿Prefieres que nosotros te contactemos?</h2>
-                <form action="#" class="contact__form">
-                    <label for="email" class="form__label">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" class="form__input" placeholder="Ingrese su correo"
-                        required>
-
-                    <label for="message" class="form__label">Mensaje</label>
-                    <textarea id="message" name="message" class="form__textarea" rows="5"
-                        placeholder="Escriba su mensaje..." required></textarea>
-
-                    <button type="submit" class="contact__cta">Enviar</button>
-                </form>
-            </div>
-        </section>
-
-
-    </main>
+        <div class="slider">
+            <article id="shop-products__container"></article>
+        </div>
+    </section>
+    <script src="./shop.js" type="module"></script>
 </body>
 
 </html>
