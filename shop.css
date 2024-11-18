@@ -14,6 +14,8 @@ html{
     overflow-x: hidden;
 }
 
+
+
 .shop__header {
     max-height: 50vh;
     height: 100%;
@@ -121,7 +123,7 @@ html{
 .card {
     min-width: 220px;
     width: 220px;
-    height: 350px;
+    height: 400px;
     background-color: #2c2c2c;
     border-radius: 10px;
     overflow: hidden;
@@ -156,7 +158,13 @@ html{
     padding: 1rem;
     text-align: center;
     max-height: 90px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5rem;
+    overflow: hidden; 
+    flex-grow: 1; 
 }
 
 .card__title {
@@ -177,6 +185,15 @@ html{
 .card__information p {
     margin: 0;
     word-wrap: break-word;
+}
+
+.card-footer {
+    padding: 0.5rem;
+    background-color: #333;
+    border-top: 1px solid #444; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card-btn__wrapper {
@@ -221,9 +238,9 @@ html{
 
 }
 
-@media(max-width:400px){
+@media(max-width:500px){
     .card__title{
-        font-size: 1.1rem;
+        font-size: 1.06rem;
     }
 }
 
@@ -233,6 +250,7 @@ html{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-evenly;
+    padding-bottom: 1rem;
 }
 
 @media(min-width:600px) and (max-width: 691px){
@@ -255,3 +273,49 @@ html{
         min-width: 220px;
     }
 }
+
+#filter-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 1rem 1rem;
+
+}
+#filter__search {
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+    transition: border-color 0.3s ease;
+}
+
+#filter__search:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#filter__search::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+#filter__options {
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#filter__options:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+

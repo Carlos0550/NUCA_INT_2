@@ -2,7 +2,7 @@ export const productos = [
     {
         id: 1,
         title: "Camiseta de Entrenamiento",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
         idCategoria: 1,
         imageUrl: "../assets/imagenes/remeraZeusGym.webp",
         descripcion: "Confort y estilo para tus entrenamientos. Esta camiseta está diseñada para brindarte la máxima comodidad y transpirabilidad mientras superas tus límites. ¡Luce increíble mientras entrenas al máximo!"
@@ -10,7 +10,7 @@ export const productos = [
     {
         id: 2,
         title: "Pantalón Deportivo de Alta Compresión",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
         idCategoria: 1,
         imageUrl: ".././assets/imagenes/pantCompresion.png",
         descripcion: "El pantalón perfecto para un ajuste ceñido y cómodo durante tus entrenamientos más intensos. Su tecnología de compresión mejora la circulación y reduce la fatiga muscular. ¡Siente el poder de cada movimiento!"

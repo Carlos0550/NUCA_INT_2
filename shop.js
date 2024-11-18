@@ -1,128 +1,64 @@
 import { productos } from "./utils/products.js";
+import { addFilters } from "./utils/generateFilters.js";
+import { recortarPalabras } from "./utils/cutWords.js";
+import { selectRandomProducts } from "./utils/randomOffers.js";
+import { initSlider } from "./utils/slider.js";
 
-function selectRandomProducts(productos, cantidad = 6) {
-    const seleccionados = new Set()
-
-    const limite = Math.min(cantidad, productos.length)
-    console.log("Limite: ", limite)
-
-    while (seleccionados.size < limite) {
-        const indiceAleatorio = Math.floor(Math.random() * productos.length)
-        seleccionados.add(productos[indiceAleatorio])
-    }
-
-    return Array.from(seleccionados)
-}
-
-const recortarPalabras = (palabra, limit = 30) => {
-    if (palabra?.trim() === "") return palabra
-
-    const newString = palabra.slice(0, limit).trim() + "..."
-    return newString
-}
-
-const categorias = [
-    {
-        id: 1,
-        name: "Prendas",
-    },
-    {
-        id: 2,
-        name: "Suplementos"
-    },
-    {
-        id: 3,
-        name: "Gadgets"
-    }
-]
-
-let isUserScrolling = false;
-const sliderContainer = document.getElementById("shop-offer__container");
-
-function initSlider() {
-
-    if (sliderContainer.dataset.interval) {
-        clearInterval(sliderContainer.dataset.interval);
-    }
-
-    let currentPosition = 0;
-    const gap = 16;
-    const visibleCards = 1;
-
-    const card = sliderContainer.querySelector('.card');
-    const cardStyle = window.getComputedStyle(card);
-    const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight);
-
-    const totalCards = sliderContainer.children.length;
-    const maxPosition = (totalCards - visibleCards) * (cardWidth + gap);
-
-    const moveSlider = () => {
-        if (isUserScrolling) return
-        currentPosition += cardWidth + gap;
-
-        if (currentPosition > maxPosition) {
-            currentPosition = 0;
-        }
-
-        sliderContainer.scrollTo({ left: currentPosition, behavior: "smooth" });
-    };
-
-    const interval = setInterval(moveSlider, 2000);
-    sliderContainer.dataset.interval = interval;
-}
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const productosAleatorios = selectRandomProducts(productos)
-    const offertsContainer = document.getElementById("shop-offer__container")
-    const productsContainer = document.getElementById("shop__products")
-    for (const producto of productosAleatorios) {
-        const cardsTemplate = `
-        <div class="card">
-                <picture class="card__image">
-                    <img src="./assets/${producto.imageUrl}" alt="card-product-image">
-                </picture>
-                <div class="card__information">
-                    <p class="card__title">${recortarPalabras(producto.title)}</p>
-                    <p class="card__price">${parseFloat(producto.price).toLocaleString("es-AR", { style: "currency", currency: "ARS" })}</p>
-                </div>
-        </div>
-    `
-        offertsContainer.insertAdjacentHTML("beforeend", cardsTemplate)
-
-    }
-
-    for (const producto of productos) {
+function renderProducts(products, container) {
+    container.innerHTML = "";
+    for (const producto of products) {
         const cardsTemplate = `
         <div class="card shop">
-                <picture class="card__image">
-                    <img src="./assets/${producto.imageUrl}" alt="card-product-image">
-                </picture>
-                <div class="card__information">
-                    <p class="card__title">${recortarPalabras(producto.title)}</p>
-                    <p class="card__price">${parseFloat(producto.price).toLocaleString("es-AR", { style: "currency", currency: "ARS" })}</p>
-                </div>
+            <picture class="card__image">
+                <img src="./assets/${producto.imageUrl}" alt="card-product-image">
+            </picture>
+            <div class="card__information">
+                <p class="card__title">${recortarPalabras(producto.title)}</p>
+                <p class="card__price">${parseFloat(producto.price).toLocaleString("es-AR", { style: "currency", currency: "ARS" })}</p>
+            </div>
+            <footer class="card-footer">
                 <div class="card-btn__wrapper">
-                        <button class="card-btn">Más detalles</button>
-                    </div>
+                    <button class="card-btn">Más detalles</button>
+                </div>
+            </footer>
         </div>
-    `
-        productsContainer.insertAdjacentHTML("beforeend", cardsTemplate)
+        `;
+        container.insertAdjacentHTML("beforeend", cardsTemplate);
     }
-    initSlider()
+}
 
+document.addEventListener("DOMContentLoaded", () => {
+    const productosAleatorios = selectRandomProducts(productos);
+    const offertsContainer = document.getElementById("shop-offer__container");
+    const productsContainer = document.getElementById("shop__products");
+    const filterContainer = document.getElementById("filter-container");
 
+    filterContainer.innerHTML = addFilters();
+
+    const inputSearch = document.getElementById("filter__search");
+    const categoryFilter = document.getElementById("filter__options");
+
+    renderProducts(productos, productsContainer);
+    renderProducts(productosAleatorios, offertsContainer);
+
+    inputSearch.addEventListener("input", applyFilters);
+    categoryFilter.addEventListener("change", applyFilters);
+
+    function applyFilters() {
+        const searchQuery = inputSearch.value.toLowerCase();
+        const selectedCategory = categoryFilter.value;
+
+        const filteredProducts = productos.filter((product) => {
+            const matchesProduct = product.idCategoria === parseInt(selectedCategory) &&
+            product.title.toLowerCase().includes(searchQuery.toLowerCase())
+            
+            return matchesProduct
+        });
+
+        renderProducts(filteredProducts, productsContainer);
+    }
+
+    initSlider();
 });
 
-sliderContainer.addEventListener("scroll", () => {
-    isUserScrolling = true
-    clearTimeout(sliderContainer.scrollTimeout)
-    sliderContainer.scrollTimeout = setTimeout(() => {
-        isUserScrolling = false
-    }, 1000);
-})
-
 window.addEventListener("resize", initSlider);
-
-
