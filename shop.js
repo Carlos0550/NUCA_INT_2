@@ -46,13 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function applyFilters() {
         const searchQuery = inputSearch.value.toLowerCase();
-        const selectedCategory = categoryFilter.value;
+        const selectedCategory = categoryFilter.value ;
+        console.log("selectedCategory: ", selectedCategory)
 
         const filteredProducts = productos.filter((product) => {
-            const matchesProduct = product.idCategoria === parseInt(selectedCategory) &&
-            product.title.toLowerCase().includes(searchQuery.toLowerCase())
-            
-            return matchesProduct
+            const matchesCategory = selectedCategory && selectedCategory !== "todos"
+                ? product.idCategoria === parseInt(selectedCategory)
+                : true;
+    
+            const matchesSearch = searchQuery
+                ? product.title.toLowerCase().includes(searchQuery)
+                : true;
+    
+            return matchesCategory && matchesSearch;
         });
 
         renderProducts(filteredProducts, productsContainer);
