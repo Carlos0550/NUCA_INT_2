@@ -5,7 +5,7 @@ export const productos = [
         price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
         idCategoria: 1,
         imageUrl: "../assets/imagenes/remeraZeusGym.webp",
-        descripcion: `<p>Descubre la combinación perfecta de confort y estilo con nuestra <strong>Camiseta de Entrenamiento</strong>. Diseñada con tecnología de tejido transpirable, esta prenda garantiza que te mantengas fresco incluso en los entrenamientos más intensos. Su diseño moderno se adapta a cualquier estilo deportivo, mientras que las costuras reforzadas aseguran durabilidad a largo plazo. Ideal para gimnasio, actividades al aire libre o días de descanso activos. ¡Luce y siéntete increíble mientras te esfuerzas por alcanzar tus metas!</p>`
+        descripcion: "Confort y estilo para tus entrenamientos. Esta camiseta está diseñada para brindarte la máxima comodidad y transpirabilidad mientras superas tus límites. ¡Luce increíble mientras entrenas al máximo!"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const productos = [
         price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
         idCategoria: 1,
         imageUrl: ".././assets/imagenes/pantCompresion.png",
-        descripcion: `<p>Optimiza tu rendimiento con nuestro <strong>Pantalón Deportivo de Alta Compresión</strong>. Diseñado para brindar soporte muscular en entrenamientos exigentes, su ajuste ergonómico mejora la circulación y reduce la vibración muscular, ayudando a minimizar la fatiga. Fabricado con materiales de secado rápido y costuras planas para evitar rozaduras, es perfecto para corredores, levantadores de pesas y atletas de cualquier nivel. ¡Confort, estilo y tecnología en una sola prenda!</p>`
+        descripcion: "El pantalón perfecto para un ajuste ceñido y cómodo durante tus entrenamientos más intensos. Su tecnología de compresión mejora la circulación y reduce la fatiga muscular. ¡Siente el poder de cada movimiento!"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 2,
         imageUrl: ".././assets/imagenes/proteina.png",
-        descripcion: `<p>Impulsa tu progreso físico con nuestra <strong>Proteína Whey 100%</strong>. Cada porción contiene 25 gramos de proteína de alta calidad para promover el crecimiento muscular y acelerar la recuperación post-entrenamiento. Enriquecida con aminoácidos esenciales, es ideal para cualquier etapa de tu jornada fitness, ya sea que busques aumentar masa muscular, mantener tu peso o tonificar tu cuerpo. Su delicioso sabor y textura cremosa hacen que sea un placer incluirla en tu rutina diaria.</p>`
+        descripcion: "La proteína ideal para desarrollar músculo y recuperarte después de tus entrenamientos. Con 25 gramos de proteína por porción, esta Whey es todo lo que tu cuerpo necesita para alcanzar su máximo potencial. ¡Recupérate más rápido y más fuerte!"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 2,
         imageUrl: ".././assets/imagenes/creatina.jpeg",
-        descripcion: `<p>Mejora tu rendimiento físico con nuestra <strong>Creatina Monohidratada</strong>, el suplemento número uno para incrementar fuerza, potencia y recuperación. Cada dosis garantiza la máxima pureza para mejorar la resistencia muscular y apoyar la síntesis de energía celular. Perfecta para quienes buscan superar sus marcas personales en el gimnasio o cualquier deporte. ¡Añádela a tu rutina diaria y experimenta entrenamientos más explosivos!</p>`
+        descripcion: "La creatina es esencial para aumentar la fuerza y el rendimiento físico. Aumenta tu resistencia, mejora la explosividad y ayuda en la recuperación. ¡Prepárate para llevar tu entrenamiento al siguiente nivel!"
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 2,
         imageUrl: ".././assets/imagenes/bcaa.jpeg",
-        descripcion: `<p>Maximiza tu recuperación muscular con nuestros <strong>BCAA's Aminoácidos Ramificados</strong>. Formulados con leucina, isoleucina y valina en la proporción ideal de 2:1:1, estos aminoácidos esenciales ayudan a prevenir el catabolismo muscular y mejoran la síntesis de proteínas. Perfectos para consumir antes, durante o después del entrenamiento. ¡Reduce el cansancio muscular y mantén tu cuerpo siempre listo para el siguiente desafío!</p>`
+        descripcion: "Suplemento esencial para la recuperación y el rendimiento. Los BCAA's ayudan a reducir el daño muscular y mejorar la síntesis de proteínas. ¡Maximiza tus ganancias y minimiza el dolor muscular!"
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
         imageUrl: ".././assets/imagenes/guantesEntrenamiento.jpeg",
-        descripcion: `<p>Protege tus manos y mejora tu agarre con nuestros <strong>Guantes de Entrenamiento</strong>. Fabricados con materiales resistentes y transpirables, ofrecen comodidad y seguridad en cada levantamiento. Su diseño ergonómico incluye almohadillas en las áreas clave de presión para reducir la fricción y prevenir lesiones. Ideales para pesas, barras y ejercicios funcionales. ¡Entrena con confianza y sin límites!</p>`
+        descripcion: "Protege tus manos mientras entrenas con estos guantes de alta calidad. Perfectos para levantar pesas, hacer flexiones o practicar boxeo. ¡Entrena con seguridad y sin preocupaciones!"
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
         imageUrl: ".././assets/imagenes/cuerdaSaltar.jpeg",
-        descripcion: `<p>Eleva tu rutina de cardio con nuestra <strong>Cuerda para Saltar Profesional</strong>. Diseñada con un sistema de rodamientos de alta velocidad y un cable ajustable, permite realizar movimientos fluidos y precisos. Ideal para entrenamientos HIIT, boxeo y ejercicios de acondicionamiento. Compacta, duradera y fácil de transportar, es el complemento perfecto para mejorar tu coordinación, resistencia y quema de calorías.</p>`
+        descripcion: "Entrena tu resistencia cardiovascular y mejora tu coordinación con esta cuerda para saltar de alta calidad. Ideal para ejercicios de calentamiento o cardio intensivo. ¡Rompe tus propios récords de velocidad y resistencia!"
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
         imageUrl: ".././assets/imagenes/bandaElastica.jpg",
-        descripcion: `<p>Potencia tus entrenamientos con nuestra <strong>Banda Elástica de Resistencia</strong>. Perfecta para ejercicios de movilidad, fuerza y rehabilitación, esta banda es versátil y se adapta a cualquier nivel de entrenamiento. Fabricada con materiales de alta durabilidad, ofrece la resistencia ideal para fortalecer y tonificar tus músculos. ¡Un accesorio esencial para llevar tu rendimiento al siguiente nivel!</p>`
+        descripcion: "Añade resistencia a tus ejercicios de fuerza y flexibilidad. Esta banda es perfecta para mejorar la movilidad y aumentar la intensidad de tus entrenamientos. ¡Un accesorio esencial para cualquier rutina de gimnasio!"
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
         imageUrl: ".././assets/imagenes/rodillera.jpeg",
-        descripcion: `<p>Mantén tus rodillas protegidas con nuestra <strong>Rodillera de Compresión</strong>. Diseñada para brindar soporte durante entrenamientos intensos o actividades de alto impacto, esta rodillera alivia la presión articular y mejora la circulación. Ideal para corredores, levantadores de pesas o quienes buscan prevenir lesiones. ¡Disfruta de entrenamientos más seguros y efectivos!</p>`
+        descripcion: "Diseñada para brindar soporte a tus rodillas durante entrenamientos intensivos. Alivia el dolor y reduce la inflamación, lo que permite un mejor rendimiento en tus entrenamientos. ¡Siente la diferencia en cada movimiento!"
     },
     {
         id: 10,
@@ -77,86 +77,86 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
         imageUrl: ".././assets/imagenes/shaker.png",
-        descripcion: `<p>Prepara tus batidos de manera rápida y sencilla con nuestro <strong>Shaker para Suplementos</strong>. Con un diseño ergonómico, tapa hermética y sistema de mezcla sin grumos, es ideal para llevar tus suplementos al gimnasio o al trabajo. Fabricado con materiales libres de BPA, combina funcionalidad y estilo. ¡La herramienta perfecta para mantener tu nutrición en cualquier lugar!</p>`
+        descripcion: "El shaker ideal para mezclar tus suplementos en segundos. Con diseño antideslizante y tapa hermética, este shaker es perfecto para llevarlo a cualquier parte. ¡No más grumos, solo una mezcla suave y perfecta!"
     },
     {
         id: 11,
-        title: "Rodillo de Espuma para Masajes",
+        title: "Zapatillas de Running",
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/rodilloEspuma.jpg",
-        descripcion: `<p>Recupera tus músculos después del entrenamiento con nuestro <strong>Rodillo de Espuma para Masajes</strong>. Diseñado para aliviar tensiones, mejorar la circulación y reducir el dolor muscular, este accesorio es ideal para todo tipo de deportistas. Su construcción duradera y su diseño ergonómico permiten trabajar en profundidad cada grupo muscular. ¡Haz que la recuperación sea parte de tu rutina!</p>`
+        idCategoria: 1,
+        imageUrl: ".././assets/imagenes/zapatilla.jpeg",
+        descripcion: "Perfectas para corredores y entrenamientos en gimnasio. Estas zapatillas están diseñadas para proporcionar comodidad y soporte en cada paso, mejorando tu rendimiento en cada carrera. ¡Corre más rápido y más lejos sin dolor!"
     },
     {
         id: 12,
-        title: "Esterilla para Yoga y Fitness",
+        title: "Mancuernas de Hierro",
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
-        imageUrl: ".././assets/imagenes/esterillaYoga.jpeg",
-        descripcion: `<p>Realiza tus entrenamientos con total comodidad en nuestra <strong>Esterilla para Yoga y Fitness</strong>. Su superficie antideslizante proporciona un agarre excelente en cualquier posición, mientras que su material acolchado protege tus articulaciones. Perfecta para yoga, pilates, ejercicios de fuerza y estiramientos. Fácil de enrollar y transportar, es el compañero ideal para tus entrenamientos en casa o al aire libre.</p>`
+        imageUrl: ".././assets/imagenes/mancuernas.webp",
+        descripcion: "Estas mancuernas de hierro son ideales para entrenamientos de fuerza. Su diseño duradero y su peso ajustable te permiten personalizar tus entrenamientos de acuerdo con tus objetivos. ¡Fortalece tus músculos y alcanza tus metas!"
     },
     {
         id: 13,
-        title: "Cinturón de Levantamiento de Pesas",
+        title: "Suplemento de L-Carnitina",
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/cinturonPesas.jpeg",
-        descripcion: `<p>Maximiza tu seguridad y rendimiento con nuestro <strong>Cinturón de Levantamiento de Pesas</strong>. Diseñado para brindar soporte lumbar y estabilidad durante ejercicios pesados, este cinturón reduce el riesgo de lesiones y mejora tu postura. Fabricado con materiales resistentes y un sistema de ajuste cómodo, es un accesorio imprescindible para cualquier levantador de pesas. ¡Alcanza tus metas con confianza y protección!</p>`
+        idCategoria: 2,
+        imageUrl: ".././assets/imagenes/lcarnitina.jpeg",
+        descripcion: "La L-Carnitina es un potente quemador de grasa que mejora tu energía durante los entrenamientos. Ideal para quienes buscan perder peso de manera eficiente y saludable. ¡Activa tu metabolismo y quema esas calorías extra!"
     },
     {
         id: 14,
-        title: "Pesa Rusa de Vinilo",
+        title: "Banqueta de Entrenamiento Ajustable",
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 3,
-        imageUrl: ".././assets/imagenes/pesaRusa.jpeg",
-        descripcion: `<p>Incorpora versatilidad y funcionalidad a tus entrenamientos con nuestra <strong>Pesa Rusa de Vinilo</strong>. Ideal para ejercicios de fuerza, potencia y equilibrio, esta pesa rusa tiene un diseño ergonómico para un agarre cómodo y seguro. Su revestimiento de vinilo protege el suelo y garantiza durabilidad a largo plazo. ¡Entrena en casa o en el gimnasio con una herramienta que lo hace todo!</p>`
+        imageUrl: ".././assets/imagenes/banqueta.jpeg",
+        descripcion: "Una banca robusta y ajustable que te permite entrenar cómodamente en diferentes posiciones. Perfecta para ejercicios de fuerza, como press de banca y ejercicios de abdominales. ¡Una inversión esencial para tu gimnasio en casa!"
     },
     {
         id: 15,
-        title: "Camiseta Técnica para Running",
+        title: "Botella de Agua de Acero Inoxidable",
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: ".././assets/imagenes/camisetaRunning.jpeg",
-        descripcion: `<p>Corre con estilo y comodidad con nuestra <strong>Camiseta Técnica para Running</strong>. Fabricada con tejidos ligeros y transpirables, ofrece un secado rápido y una excelente gestión de la humedad. Su diseño ergonómico y reflectante te mantiene visible y cómodo en cualquier condición. Ideal para corredores principiantes y experimentados. ¡Mejora tu rendimiento en cada zancada!</p>`
+        idCategoria: 3,
+        imageUrl: "../assets/imagenes/botellaAgua.jpeg",
+        descripcion: "Mantente hidratado durante tus entrenamientos con esta botella de acero inoxidable. Con aislamiento térmico para mantener tus bebidas frías o calientes por horas. ¡Diseño elegante y duradero para el gimnasio y la oficina!"
     },
     {
         id: 16,
-        title: "Zapatillas Deportivas Todo Terreno",
-        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: ".././assets/imagenes/zapatillasTodoTerreno.jpeg",
-        descripcion: `<p>Explora cualquier terreno con nuestras <strong>Zapatillas Deportivas Todo Terreno</strong>. Diseñadas con suelas antideslizantes y amortiguación avanzada, ofrecen un soporte excepcional para caminatas, running o entrenamientos de alta intensidad. Fabricadas con materiales resistentes al agua y transpirables, son la elección perfecta para quienes buscan rendimiento y estilo en cualquier situación.</p>`
+        title: "Suplemento de Glutamina",
+        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        idCategoria: 2,
+        imageUrl: ".././assets/imagenes/glutamina.jpeg",
+        descripcion: "Ayuda a mejorar la recuperación muscular y fortalecer tu sistema inmune. Ideal para después de entrenamientos intensos, la Glutamina te ayuda a minimizar el daño muscular y maximizar tus ganancias. ¡Recupérate más rápido y con menos dolor!"
     },
     {
         id: 17,
-        title: "Mancuernas Ajustables",
-        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/mancuernasAjustables.jpeg",
-        descripcion: `<p>Lleva tu entrenamiento al siguiente nivel con nuestras <strong>Mancuernas Ajustables</strong>. Este sistema innovador te permite seleccionar el peso ideal en segundos, eliminando la necesidad de múltiples pares de mancuernas. Perfectas para entrenamientos de fuerza y tonificación, su diseño compacto ahorra espacio y garantiza un rendimiento óptimo. ¡La solución perfecta para un gimnasio en casa!</p>`
+        title: "Pantalón Corto Deportivo",
+        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        idCategoria: 1,
+        imageUrl: ".././assets/imagenes/shorts.png",
+        descripcion: "Cómodo y transpirable, ideal para entrenamientos en climas cálidos o actividades de alto rendimiento. Su diseño con tecnología de secado rápido y su ajuste perfecto lo hacen imprescindible para el gimnasio. ¡Dale libertad a tus piernas!"
     },
     {
         id: 18,
-        title: "Bolsa de Deporte Impermeable",
+        title: "Suplemento de Óxido Nítrico",
+        idCategoria: 2,
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/bolsaDeporte.jpeg",
-        descripcion: `<p>Organiza tu equipo con estilo gracias a nuestra <strong>Bolsa de Deporte Impermeable</strong>. Con compartimentos separados para ropa, zapatos y accesorios, esta bolsa es perfecta para mantener todo en orden. Su diseño resistente al agua y ligero la hace ideal para el gimnasio, viajes o actividades al aire libre. ¡Lleva todo lo que necesitas cómodamente y con seguridad!</p>`
+        imageUrl: ".././assets/imagenes/oxnitrico.png",
+        descripcion: "Aumenta tu energía y resistencia con este suplemento de óxido nítrico. Perfecto para mejorar el rendimiento en entrenamientos de alta intensidad. ¡Siente el poder de un entrenamiento más explosivo y con más resistencia!"
     },
     {
         id: 19,
-        title: "Set de Bandas de Resistencia",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        title: "Estera de Yoga Antideslizante",
         idCategoria: 3,
-        imageUrl: ".././assets/imagenes/setBandasResistencia.jpeg",
-        descripcion: `<p>Completa tus entrenamientos con nuestro <strong>Set de Bandas de Resistencia</strong>. Incluye varias bandas con diferentes niveles de resistencia para adaptarse a tus necesidades. Perfectas para ejercicios de rehabilitación, tonificación y fuerza, este set es portátil y fácil de usar en cualquier lugar. ¡Añade versatilidad y variedad a tu rutina diaria!</p>`
+        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        imageUrl: ".././assets/imagenes/esterayoga.png",
+        descripcion: "Perfecta para tus rutinas de yoga o estiramientos. Esta estera antideslizante asegura un buen agarre y comodidad en cada postura. ¡Mantén el equilibrio y la estabilidad durante tus sesiones de yoga!"
     },
     {
         id: 20,
-        title: "Botella de Agua Deportiva",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        title: "Reloj Deportivo con Monitoreo de Frecuencia Cardíaca",
         idCategoria: 3,
-        imageUrl: ".././assets/imagenes/botellaDeportiva.jpeg",
-        descripcion: `<p>Mantente hidratado durante tus entrenamientos con nuestra <strong>Botella de Agua Deportiva</strong>. Con un diseño ergonómico y tapa hermética, es perfecta para llevar a cualquier actividad física. Fabricada con materiales libres de BPA, esta botella es resistente, ligera y fácil de limpiar. ¡Un accesorio imprescindible para mantener tu rendimiento óptimo!</p>`
+        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+        imageUrl: ".././assets/imagenes/reloj.png",
+        descripcion: "Mantén un seguimiento de tu rendimiento con este reloj deportivo. Con monitoreo de frecuencia cardíaca, contador de calorías y seguimiento de actividades. ¡Esencial para entrenamientos más inteligentes y efectivos!"
     }
 ]
