@@ -18,12 +18,15 @@ html{
 
 .shop__header {
     max-height: 50vh;
-    height: 100%;
     background-color: brown;
     display: flex;
     justify-content: space-between;
     padding: .5rem;
     flex: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+
 }
 
 .shop__picture {
@@ -91,6 +94,7 @@ html{
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(24, 24, 24);
+    padding-top: 15vh;
 }
 
 .title {
