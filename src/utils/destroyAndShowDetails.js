@@ -26,11 +26,6 @@ const renderProductDetails = (selectedProduct) => {
                     <h1 class="details__title">${selectedProduct.title}</h1>
                     <h3 class="details__price">${parseFloat(selectedProduct.price).toLocaleString("es-AR",{style: "currency", currency: "ARS"})}</h3>
                     <div class="details__description">${selectedProduct.descripcion}</div>
-
-                    <div class="details__btn">
-                        <button>Añadir al carrito</button>
-                        <button>Volver atras</button>
-                    </div>
                 </div>
         </div>
     `
