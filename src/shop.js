@@ -2,15 +2,13 @@ import { productos } from "./utils/products.js";
 import { addFilters } from "./utils/generateFilters.js";
 import { selectRandomProducts } from "./utils/randomOffers.js";
 import { initSlider } from "./utils/slider.js";
-import { renderProducts } from "./utils/destroyAndShowDetails.js";
+import { renderProducts } from "./utils/renderProducts.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const productosAleatorios = selectRandomProducts(productos);
     const offertsContainer = document.getElementById("shop-offer__container");
     const productsContainer = document.getElementById("shop__products");
     const filterContainer = document.getElementById("filter-container");
-    const productDetail = document.getElementById("productDetail")
-    productDetail.style.display = "none"
     filterContainer.innerHTML = addFilters();
 
     const inputSearch = document.getElementById("filter__search");

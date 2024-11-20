@@ -1,6 +1,4 @@
 import { recortarPalabras } from "./cutWords.js";
-import { productos } from "./products.js";
-import { dropContentDOM } from "./destroyAndShowDetails.js";
 
 export function renderProducts(products, container) {
     container.innerHTML = "";
@@ -27,7 +25,7 @@ export function renderProducts(products, container) {
     detailButtons.forEach(button => {
         button.addEventListener("click", () => {
             const productId = button.getAttribute("data-id");
-            dropContentDOM(productId)
+            window.location.href = `../../productDetail.html?productId=${productId}`
         });
     });
 }
