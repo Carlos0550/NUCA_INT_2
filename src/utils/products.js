@@ -1,13 +1,13 @@
- 
+
 
 export const productos = [
-    {
-        id: 1,
-        title: "Camiseta de Entrenamiento",
-        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: "../assets/imagenes/remeraZeusGym.webp",
-        descripcion: `<p><strong>Confort y estilo para tus entrenamientos.</strong> Esta camiseta está diseñada pensando en atletas que buscan rendimiento y comodidad en cada movimiento.</p>
+  {
+    id: 1,
+    title: "Camiseta de Entrenamiento",
+    price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
+    idCategoria: 1,
+    imageUrl: "../assets/imagenes/remeraZeusGym.webp",
+    descripcion: `<p><strong>Confort y estilo para tus entrenamientos.</strong> Esta camiseta está diseñada pensando en atletas que buscan rendimiento y comodidad en cada movimiento.</p>
   <ul>
     <li><strong>Material de alta calidad:</strong> Fabricada con una mezcla de poliéster y elastano, es ligera, suave al tacto y de secado rápido.</li>
     <li><strong>Transpirabilidad:</strong> Su tecnología de ventilación ayuda a mantenerte fresco incluso durante los entrenamientos más intensos.</li>
@@ -47,20 +47,20 @@ export const productos = [
     <li>Secar al aire o a baja temperatura.</li>
     <li>No planchar.</li>
   </ul>`,
-        opcionesCompra: {
-            colores: [1, 2, 3, 4],
-            tallas: [],
-            tamanios: [],
-            sabores: []
-        }
-    },
-    {
-        id: 2,
-        title: "Pantalón Deportivo de Alta Compresión",
-        price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: ".././assets/imagenes/pantCompresion.png",
-        descripcion: `<p><strong>El pantalón perfecto para un ajuste ceñido y cómodo.</strong> Diseñado para quienes buscan maximizar su rendimiento y recuperación, este pantalón es ideal para entrenamientos intensos y sesiones de recuperación activa.</p>
+    opcionesCompra: {
+      colores: [1, 2, 3, 4],
+      tallas: [],
+      tamanios: [],
+      sabores: []
+    }
+  },
+  {
+    id: 2,
+    title: "Pantalón Deportivo de Alta Compresión",
+    price: Math.floor(Math.random() * (15000 - 5000 + 1)) + 1000,
+    idCategoria: 1,
+    imageUrl: ".././assets/imagenes/pantCompresion.png",
+    descripcion: `<p><strong>El pantalón perfecto para un ajuste ceñido y cómodo.</strong> Diseñado para quienes buscan maximizar su rendimiento y recuperación, este pantalón es ideal para entrenamientos intensos y sesiones de recuperación activa.</p>
   <ul>
     <li><strong>Tecnología de compresión avanzada:</strong> Mejora la circulación sanguínea, lo que ayuda a reducir la fatiga muscular y acelera la recuperación.</li>
     <li><strong>Tejido transpirable y flexible:</strong> Fabricado con materiales que absorben la humedad y permiten una ventilación óptima, manteniéndote seco y cómodo.</li>
@@ -100,20 +100,20 @@ export const productos = [
     <li>Secar al aire para prolongar la vida útil del tejido.</li>
     <li>No planchar ni lavar en seco.</li>
   </ul>`,
-        opcionesCompra: {
-            colores: [1, 5, 6],
-            tallas: [],
-            tamanios: [],
-            sabores: []
-        }
-    },
-    {
-        id: 3,
-        title: "Proteína Whey 100%",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 2,
-        imageUrl: ".././assets/imagenes/proteina.png",
-        descripcion: `<p><strong>La proteína ideal para desarrollar músculo y recuperarte después de tus entrenamientos.</strong> Diseñada para atletas y personas activas, esta Whey de alta calidad te ayuda a alcanzar tus metas físicas al proporcionar los nutrientes esenciales que tu cuerpo necesita.</p>
+    opcionesCompra: {
+      colores: [1, 5, 6],
+      tallas: [],
+      tamanios: [],
+      sabores: []
+    }
+  },
+  {
+    id: 3,
+    title: "Proteína Whey 100%",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 2,
+    imageUrl: ".././assets/imagenes/proteina.png",
+    descripcion: `<p><strong>La proteína ideal para desarrollar músculo y recuperarte después de tus entrenamientos.</strong> Diseñada para atletas y personas activas, esta Whey de alta calidad te ayuda a alcanzar tus metas físicas al proporcionar los nutrientes esenciales que tu cuerpo necesita.</p>
   <ul>
     <li><strong>25 gramos de proteína por porción:</strong> Perfecta para la construcción y reparación muscular después de actividades intensas.</li>
     <li><strong>Bajo en carbohidratos y grasas:</strong> Ideal para dietas enfocadas en el control de peso y definición muscular.</li>
@@ -151,20 +151,20 @@ export const productos = [
     <li>Úsalo en recetas como pancakes o smoothies para una dieta más versátil.</li>
     <li>Complementa su uso con una alimentación balanceada para mejores resultados.</li>
   </ul>`,
-        opcionesCompra: {
-            sabores: [3],
-            tamanios: [1, 2],
-            tallas: [],
-            colores: []
-        }
-    },
-    {
-        id: 4,
-        title: "Creatina Monohidratada",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 2,
-        imageUrl: ".././assets/imagenes/creatina.jpeg",
-        descripcion: `<p><strong>Esencial para aumentar la fuerza y el rendimiento físico.</strong> Este suplemento de alta pureza es ideal para deportistas que buscan mejorar su explosividad, resistencia y recuperación muscular.</p>
+    opcionesCompra: {
+      sabores: [3],
+      tamanios: [1, 2],
+      tallas: [],
+      colores: []
+    }
+  },
+  {
+    id: 4,
+    title: "Creatina Monohidratada",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 2,
+    imageUrl: ".././assets/imagenes/creatina.jpeg",
+    descripcion: `<p><strong>Esencial para aumentar la fuerza y el rendimiento físico.</strong> Este suplemento de alta pureza es ideal para deportistas que buscan mejorar su explosividad, resistencia y recuperación muscular.</p>
   <ul>
     <li><strong>Aumenta la fuerza:</strong> Favorece la producción de energía inmediata para maximizar el rendimiento en actividades de alta intensidad.</li>
     <li><strong>Mejora la resistencia:</strong> Ayuda a prolongar el tiempo de esfuerzo durante entrenamientos intensos.</li>
@@ -203,20 +203,20 @@ export const productos = [
     <li>Úsala de manera constante durante 4-6 semanas para resultados óptimos.</li>
     <li>Perfecta para fases de carga y mantenimiento según tu plan de entrenamiento.</li>
   </ul>`,
-        opcionesCompra: {
-            sabores: [3],
-            tamanios: [3, 4],
-            colores: [],
-            talles: []
-        }
-    },
-    {
-        id: 5,
-        title: "BCAA's Aminoácidos Ramificados",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 2,
-        imageUrl: ".././assets/imagenes/bcaa.jpeg",
-        descripcion: `<p><strong>El suplemento esencial para la recuperación y el rendimiento.</strong> Diseñado para atletas y entusiastas del fitness, los BCAA's son clave para potenciar tus entrenamientos y acelerar tu recuperación muscular.</p>
+    opcionesCompra: {
+      sabores: [3],
+      tamanios: [3, 4],
+      colores: [],
+      talles: []
+    }
+  },
+  {
+    id: 5,
+    title: "BCAA's Aminoácidos Ramificados",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 2,
+    imageUrl: ".././assets/imagenes/bcaa.jpeg",
+    descripcion: `<p><strong>El suplemento esencial para la recuperación y el rendimiento.</strong> Diseñado para atletas y entusiastas del fitness, los BCAA's son clave para potenciar tus entrenamientos y acelerar tu recuperación muscular.</p>
   <ul>
     <li><strong>Mejora la síntesis de proteínas:</strong> Favorece el crecimiento y la reparación muscular después de entrenamientos intensos.</li>
     <li><strong>Reduce el daño muscular:</strong> Disminuye la degradación de proteínas durante el ejercicio, ayudando a preservar la masa muscular.</li>
@@ -259,20 +259,20 @@ export const productos = [
     <li>Ideales para entrenamientos en ayunas, ya que protegen la masa muscular.</li>
     <li>Complemento perfecto en programas de pérdida de grasa y definición.</li>
   </ul>`,
-        opcionesCompra: {
-            sabores: [3],
-            tamanios: [3, 5],
-            tallas: [],
-            colores: []
-        }
-    },
-    {
-        id: 6,
-        title: "Guantes de Entrenamiento",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/guantesEntrenamiento.jpeg",
-        descripcion: `<p><strong>Protege tus manos mientras entrenas.</strong> Diseñados para ofrecer comodidad, soporte y durabilidad, estos guantes son el complemento ideal para cualquier tipo de entrenamiento.</p>
+    opcionesCompra: {
+      sabores: [3],
+      tamanios: [3, 5],
+      tallas: [],
+      colores: []
+    }
+  },
+  {
+    id: 6,
+    title: "Guantes de Entrenamiento",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/guantesEntrenamiento.jpeg",
+    descripcion: `<p><strong>Protege tus manos mientras entrenas.</strong> Diseñados para ofrecer comodidad, soporte y durabilidad, estos guantes son el complemento ideal para cualquier tipo de entrenamiento.</p>
   <ul>
     <li><strong>Protección superior:</strong> Almohadillas estratégicamente colocadas para reducir la presión y prevenir ampollas y callosidades.</li>
     <li><strong>Agarre mejorado:</strong> Material antideslizante en las palmas para mayor seguridad al levantar pesas o usar barras.</li>
@@ -311,20 +311,20 @@ export const productos = [
     <li>No los laves en lavadora para evitar dañar los materiales.</li>
     <li>Déjalos secar al aire después de cada uso para prevenir malos olores.</li>
   </ul>`,
-        opcionesCompra: {
-            tallas: [1, 2, 3, 4],
-            colores: [1, 3, 7],
-            tamanios: [],
-            sabores: []
-        }
-    },
-    {
-        id: 7,
-        title: "Cuerda para Saltar Profesional",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/cuerdaSaltar.jpeg",
-        descripcion: `<p><strong>Entrena tu resistencia cardiovascular y mejora tu coordinación.</strong> Esta cuerda de alta calidad está diseñada para acompañarte en tus sesiones de calentamiento, cardio intensivo y entrenamientos funcionales, ayudándote a superar tus límites.</p>
+    opcionesCompra: {
+      tallas: [1, 2, 3, 4],
+      colores: [1, 3, 7],
+      tamanios: [],
+      sabores: []
+    }
+  },
+  {
+    id: 7,
+    title: "Cuerda para Saltar Profesional",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/cuerdaSaltar.jpeg",
+    descripcion: `<p><strong>Entrena tu resistencia cardiovascular y mejora tu coordinación.</strong> Esta cuerda de alta calidad está diseñada para acompañarte en tus sesiones de calentamiento, cardio intensivo y entrenamientos funcionales, ayudándote a superar tus límites.</p>
   <ul>
     <li><strong>Ajustable y ergonómica:</strong> Longitud fácilmente ajustable para adaptarse a cualquier estatura y asas cómodas que ofrecen un agarre firme y antideslizante.</li>
     <li><strong>Rendimiento superior:</strong> Sistema de rodamientos de alta velocidad para un giro fluido y sin interrupciones, ideal para ejercicios avanzados como double unders.</li>
@@ -367,20 +367,20 @@ export const productos = [
     <li>Utiliza calzado adecuado para proteger tus articulaciones mientras saltas.</li>
     <li>Evita superficies abrasivas para prolongar la vida útil del recubrimiento.</li>
   </ul>`,
-        opcionesCompra: {
-            tallas: [1, 2, 3, 4],
-            colores: [1, 4, 7],
-            sabores: [],
-            tamanios: []
-        }
-    },
-    {
-        id: 8,
-        title: "Banda Elástica de Resistencia",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/bandaElastica.jpg",
-        descripcion: `<p><strong>Añade resistencia a tus ejercicios de fuerza y flexibilidad.</strong> Esta banda es perfecta para intensificar tus entrenamientos y mejorar la movilidad, ayudándote a lograr un entrenamiento más completo y efectivo.</p>
+    opcionesCompra: {
+      tallas: [1, 2, 3, 4],
+      colores: [1, 4, 7],
+      sabores: [],
+      tamanios: []
+    }
+  },
+  {
+    id: 8,
+    title: "Banda Elástica de Resistencia",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/bandaElastica.jpg",
+    descripcion: `<p><strong>Añade resistencia a tus ejercicios de fuerza y flexibilidad.</strong> Esta banda es perfecta para intensificar tus entrenamientos y mejorar la movilidad, ayudándote a lograr un entrenamiento más completo y efectivo.</p>
   <ul>
     <li><strong>Versatilidad en entrenamientos:</strong> Úsala para mejorar la resistencia muscular, aumentar la intensidad de ejercicios de fuerza o como herramienta para estiramientos y movilidad.</li>
     <li><strong>Mejora de la flexibilidad:</strong> Ideal para estiramientos dinámicos y trabajo de movilidad articular, contribuyendo a un rango de movimiento más amplio.</li>
@@ -423,20 +423,20 @@ export const productos = [
     <li>Guárdala en un lugar fresco y seco para mantener su durabilidad.</li>
     <li>Para una mayor intensidad, combina diferentes resistencias en una misma rutina de ejercicios.</li>
   </ul>`,
-        opcionesCompra: {
-            colores: [7, 4, 8],
-            tallas: [],
-            tamanios: [],
-            sabores:[]
-        }
-    },
-    {
-        id: 9,
-        title: "Rodillera de Compresión",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/rodillera.jpeg",
-        descripcion: ` <p><strong>Soporte y alivio para tus rodillas durante entrenamientos intensivos.</strong> Diseñada para ayudar a reducir el dolor y la inflamación, esta rodillera de compresión es ideal para mantener tus rodillas estables mientras realizas ejercicios de alto impacto.</p>
+    opcionesCompra: {
+      colores: [7, 4, 8],
+      tallas: [],
+      tamanios: [],
+      sabores: []
+    }
+  },
+  {
+    id: 9,
+    title: "Rodillera de Compresión",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/rodillera.jpeg",
+    descripcion: ` <p><strong>Soporte y alivio para tus rodillas durante entrenamientos intensivos.</strong> Diseñada para ayudar a reducir el dolor y la inflamación, esta rodillera de compresión es ideal para mantener tus rodillas estables mientras realizas ejercicios de alto impacto.</p>
   <ul>
     <li><strong>Compresión estratégica:</strong> Proporciona un ajuste ceñido que mejora la circulación sanguínea y reduce la hinchazón, ayudando a prevenir lesiones.</li>
     <li><strong>Alivio del dolor:</strong> Ideal para quienes sufren de dolor articular o lesiones previas, aliviando la presión en la articulación de la rodilla.</li>
@@ -475,20 +475,20 @@ export const productos = [
     <li>Lávalo a mano y evita el uso de secadora para mantener la elasticidad del material.</li>
     <li>Si el dolor persiste o se intensifica, consulta con un profesional de la salud.</li>
   </ul>`,
-        opcionesCompra: {
-            tamanios: [1, 2, 3, 4],
-            colores: [1, 3, 4],
-            sabores:[],
-            tallas: []
-        }
-    },
-    {
-        id: 10,
-        title: "Shaker para Suplementos",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/shaker.png",
-        descripcion: `<p><strong>Mezcla tus suplementos en segundos con facilidad.</strong> Este shaker de alta calidad está diseñado para ofrecerte una mezcla suave y perfecta, sin grumos, gracias a su eficiente sistema de mezclado y su tapa hermética. Ideal para llevarlo contigo a donde vayas.</p>
+    opcionesCompra: {
+      tamanios: [],
+      colores: [1, 3, 4],
+      sabores: [],
+      tallas: [1, 2, 3, 4]
+    }
+  },
+  {
+    id: 10,
+    title: "Shaker para Suplementos",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/shaker.png",
+    descripcion: `<p><strong>Mezcla tus suplementos en segundos con facilidad.</strong> Este shaker de alta calidad está diseñado para ofrecerte una mezcla suave y perfecta, sin grumos, gracias a su eficiente sistema de mezclado y su tapa hermética. Ideal para llevarlo contigo a donde vayas.</p>
   <ul>
     <li><strong>Diseño antideslizante:</strong> La base antideslizante asegura un agarre seguro durante el uso, evitando que se deslice, incluso cuando está lleno.</li>
     <li><strong>Tapa hermética:</strong> Con un cierre seguro, evitarás derrames y asegurarte de que tu suplemento se mantenga bien mezclado hasta el momento de consumirlo.</li>
@@ -531,20 +531,20 @@ export const productos = [
     <li>Si no deseas que tu suplemento se quede pegado en las paredes, agrega el líquido primero y luego el polvo.</li>
     <li>Utiliza el shaker para mezclar no solo suplementos, sino también bebidas como jugos o batidos caseros.</li>
   </ul>`,
-        opcionesCompra: {
-            tamanios: [6],
-            colores: [1, 2, 4],
-            talles: [],
-            sabores: []
-        }
-    },
-    {
-        id: 11,
-        title: "Zapatillas de Running",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: ".././assets/imagenes/zapatilla.jpeg",
-        descripcion: ` <p><strong>Comodidad y soporte en cada paso para corredores y entrenamientos en gimnasio.</strong> Estas zapatillas están diseñadas específicamente para brindar estabilidad, flexibilidad y un ajuste perfecto, permitiéndote mejorar tu rendimiento y correr más rápido y más lejos sin dolor.</p>
+    opcionesCompra: {
+      tamanios: [6],
+      colores: [1, 2, 4],
+      talles: [],
+      sabores: []
+    }
+  },
+  {
+    id: 11,
+    title: "Zapatillas de Running",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 1,
+    imageUrl: ".././assets/imagenes/zapatilla.jpeg",
+    descripcion: ` <p><strong>Comodidad y soporte en cada paso para corredores y entrenamientos en gimnasio.</strong> Estas zapatillas están diseñadas específicamente para brindar estabilidad, flexibilidad y un ajuste perfecto, permitiéndote mejorar tu rendimiento y correr más rápido y más lejos sin dolor.</p>
   <ul>
     <li><strong>Amortiguación avanzada:</strong> Su tecnología de amortiguación reduce el impacto en cada pisada, protegiendo tus articulaciones durante carreras largas o entrenamientos de alta intensidad.</li>
     <li><strong>Soporte en el arco:</strong> Diseñadas para brindar un excelente soporte en el arco del pie, previniendo lesiones y mejorando la estabilidad durante el movimiento.</li>
@@ -587,20 +587,20 @@ export const productos = [
     <li>Elige el tamaño adecuado para evitar molestias y asegurar un ajuste cómodo durante las carreras.</li>
     <li>Si corres en terrenos irregulares o mojados, asegúrate de revisar la suela para evitar desgastes excesivos.</li>
   </ul>`,
-        opcionesCompra: {
-            tamanios: [6],
-            colores: [1, 4, 3],
-            tallas: [],
-            sabores: []
-        }
-    },
-    {
-        id: 12,
-        title: "Mancuernas de Hierro",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/mancuernas.webp",
-        descripcion: `<p><strong>Entrena con fuerza y durabilidad con estas mancuernas de hierro de alta calidad.</strong> Su diseño robusto y peso ajustable te permite personalizar tus entrenamientos según tus necesidades y objetivos. Perfectas para desarrollar fuerza y tonificar tus músculos, ¡alcanza tus metas de fitness con cada repetición!</p>
+    opcionesCompra: {
+      tamanios: [],
+      colores: [1, 4, 3],
+      tallas: [5, 6, 7, 8, 9, 10, 11, 12, 13],
+      sabores: []
+    }
+  },
+  {
+    id: 12,
+    title: "Mancuernas de Hierro",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/mancuernas.webp",
+    descripcion: `<p><strong>Entrena con fuerza y durabilidad con estas mancuernas de hierro de alta calidad.</strong> Su diseño robusto y peso ajustable te permite personalizar tus entrenamientos según tus necesidades y objetivos. Perfectas para desarrollar fuerza y tonificar tus músculos, ¡alcanza tus metas de fitness con cada repetición!</p>
   <ul>
     <li><strong>Diseño de alta durabilidad:</strong> Fabricadas con hierro de alta calidad, estas mancuernas soportan entrenamientos intensivos y resisten el desgaste, manteniendo su forma y funcionalidad a lo largo del tiempo.</li>
     <li><strong>Peso ajustable:</strong> Su sistema de ajuste rápido permite añadir o quitar peso según tu nivel de entrenamiento, brindando flexibilidad para progresar a medida que aumentas tu fuerza.</li>
@@ -643,20 +643,20 @@ export const productos = [
     <li>Para un mejor rendimiento, limpia las mancuernas regularmente y asegúrate de mantenerlas en un lugar seco para evitar la corrosión.</li>
     <li>Si entrenas en casa, asegúrate de tener un espacio adecuado para maniobrar las mancuernas de forma segura.</li>
   </ul>`,
-  opcionesCompra:{
-    sabores:[],
-    tamanios: [],
-    talles: [],
-    colores:[]
-  }
-    },
-    {
-        id: 13,
-        title: "Suplemento de L-Carnitina",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 2,
-        imageUrl: ".././assets/imagenes/lcarnitina.jpeg",
-        descripcion: ` <p><strong>Potente quemador de grasa y fuente de energía para tus entrenamientos.</strong> La L-Carnitina es un suplemento esencial para activar tu metabolismo y quemar calorías de manera eficiente y saludable. Perfecto para quienes buscan mejorar su rendimiento físico y perder peso de forma natural. ¡Activa tu energía y alcanza tus objetivos más rápido!</p>
+    opcionesCompra: {
+      sabores: [],
+      tamanios: [13, 14, 15, 16, 17],
+      talles: [],
+      colores: []
+    }
+  },
+  {
+    id: 13,
+    title: "Suplemento de L-Carnitina",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 2,
+    imageUrl: ".././assets/imagenes/lcarnitina.jpeg",
+    descripcion: ` <p><strong>Potente quemador de grasa y fuente de energía para tus entrenamientos.</strong> La L-Carnitina es un suplemento esencial para activar tu metabolismo y quemar calorías de manera eficiente y saludable. Perfecto para quienes buscan mejorar su rendimiento físico y perder peso de forma natural. ¡Activa tu energía y alcanza tus objetivos más rápido!</p>
   <ul>
     <li><strong>Quema de grasa eficiente:</strong> La L-Carnitina ayuda a transportar los ácidos grasos hacia las células donde se convierten en energía, facilitando la quema de grasa durante el ejercicio.</li>
     <li><strong>Aumento de energía:</strong> Potencia tu energía y resistencia durante los entrenamientos, lo que te permite rendir mejor y alcanzar un mayor rendimiento físico.</li>
@@ -699,20 +699,20 @@ export const productos = [
     <li>Si eres sensible a otros suplementos, comienza con una dosis menor para evaluar cómo responde tu cuerpo.</li>
     <li>Para optimizar los resultados, asegúrate de mantener una hidratación adecuada durante tus entrenamientos.</li>
   </ul>`,
-  opcionesCompra:{
-    sabores:[],
-    tamanios: [],
-    talles: [],
-    colores:[]
-  }
-    },
-    {
-        id: 14,
-        title: "Banqueta de Entrenamiento Ajustable",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: ".././assets/imagenes/banqueta.jpeg",
-        descripcion: `<p><strong>Entrena con comodidad y versatilidad en tu gimnasio en casa.</strong> Esta banca robusta y ajustable está diseñada para ofrecerte la máxima estabilidad y soporte durante tus entrenamientos de fuerza. Perfecta para realizar ejercicios de press de banca, abdominales y más, con la posibilidad de ajustar la inclinación para adaptarse a diferentes movimientos y posturas. ¡Haz de tu entrenamiento una experiencia cómoda y efectiva!</p>
+    opcionesCompra: {
+      sabores: [],
+      tamanios: [7],
+      talles: [],
+      colores: []
+    }
+  },
+  {
+    id: 14,
+    title: "Banqueta de Entrenamiento Ajustable",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: ".././assets/imagenes/banqueta.jpeg",
+    descripcion: `<p><strong>Entrena con comodidad y versatilidad en tu gimnasio en casa.</strong> Esta banca robusta y ajustable está diseñada para ofrecerte la máxima estabilidad y soporte durante tus entrenamientos de fuerza. Perfecta para realizar ejercicios de press de banca, abdominales y más, con la posibilidad de ajustar la inclinación para adaptarse a diferentes movimientos y posturas. ¡Haz de tu entrenamiento una experiencia cómoda y efectiva!</p>
   <ul>
     <li><strong>Ajustable:</strong> La banqueta cuenta con múltiples posiciones de inclinación para adaptarse a tus necesidades, permitiéndote realizar una amplia variedad de ejercicios de fuerza como press de banca, flys, abdominales, entre otros.</li>
     <li><strong>Diseño robusto:</strong> Construida con materiales de alta calidad, esta banca es capaz de soportar pesos elevados sin comprometer su estabilidad, asegurando una base firme durante tus entrenamientos más intensivos.</li>
@@ -755,20 +755,20 @@ export const productos = [
     <li>Para maximizar la durabilidad, limpia la banqueta regularmente y evita dejarla expuesta a condiciones de humedad.</li>
     <li>Cuando no esté en uso, pliega la banqueta para ahorrar espacio y mantenerla en buen estado.</li>
   </ul>`,
-  opcionesCompra:{
-    sabores:[],
-    tamanios: [],
-    talles: [],
-    colores:[]
-  }
-    },
-    {
-        id: 15,
-        title: "Botella de Agua de Acero Inoxidable",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 3,
-        imageUrl: "../assets/imagenes/botellaAgua.jpeg",
-        descripcion: `<p><strong>La botella perfecta para mantenerte hidratado, ya sea en el gimnasio o en la oficina.</strong> Hecha de acero inoxidable de alta calidad, esta botella cuenta con aislamiento térmico, manteniendo tus bebidas frías o calientes por horas. Su diseño elegante y duradero la convierte en una opción ideal para quienes buscan funcionalidad, estilo y resistencia. ¡Hidrátate de manera inteligente mientras cuidas el medio ambiente!</p>
+    opcionesCompra: {
+      sabores: [],
+      tamanios: [],
+      talles: [],
+      colores: []
+    }
+  },
+  {
+    id: 15,
+    title: "Botella de Agua de Acero Inoxidable",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 3,
+    imageUrl: "../assets/imagenes/botellaAgua.jpeg",
+    descripcion: `<p><strong>La botella perfecta para mantenerte hidratado, ya sea en el gimnasio o en la oficina.</strong> Hecha de acero inoxidable de alta calidad, esta botella cuenta con aislamiento térmico, manteniendo tus bebidas frías o calientes por horas. Su diseño elegante y duradero la convierte en una opción ideal para quienes buscan funcionalidad, estilo y resistencia. ¡Hidrátate de manera inteligente mientras cuidas el medio ambiente!</p>
   <ul>
     <li><strong>Aislamiento térmico de doble pared:</strong> Esta botella de acero inoxidable cuenta con un diseño de aislamiento de doble pared que mantiene las bebidas frías por hasta 24 horas y calientes por hasta 12 horas, permitiéndote disfrutar de tu bebida a la temperatura perfecta durante todo el día.</li>
     <li><strong>Material resistente:</strong> Fabricada en acero inoxidable de alta calidad, resistente a golpes y a la corrosión, lo que garantiza una larga durabilidad incluso con el uso diario.</li>
@@ -815,20 +815,20 @@ export const productos = [
     <li>Usa la botella para mantener tu té o café caliente durante todo el día, perfecta para llevar al trabajo o a la oficina.</li>
     <li>Si viajas frecuentemente, lleva tu botella para reducir el uso de botellas plásticas de un solo uso y contribuir al cuidado del medio ambiente.</li>
   </ul>`,
-        opcionesCompra: {
-            tamanios: [6],
-            colores: [1, 11, 4, 10],
-            tallas: [],
-            sabores:[]
-        }
-    },
-    {
-        id: 16,
-        title: "Suplemento de Glutamina",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 2,
-        imageUrl: ".././assets/imagenes/glutamina.jpeg",
-        descripcion: `
+    opcionesCompra: {
+      tamanios: [6],
+      colores: [1, 11, 4, 10],
+      tallas: [],
+      sabores: []
+    }
+  },
+  {
+    id: 16,
+    title: "Suplemento de Glutamina",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 2,
+    imageUrl: ".././assets/imagenes/glutamina.jpeg",
+    descripcion: `
              <p><strong>La Glutamina es tu aliada para la recuperación y el bienestar.</strong> Este suplemento esencial ayuda a mejorar la recuperación muscular después de entrenamientos intensos y a fortalecer tu sistema inmunológico, manteniéndote en forma incluso después de las sesiones más exigentes. Ideal para quienes buscan maximizar sus ganancias y minimizar el dolor muscular.</p>
   <ul>
     <li><strong>Recuperación acelerada:</strong> Reduce el tiempo de recuperación tras entrenamientos intensos al minimizar el daño muscular y estimular la síntesis de proteínas.</li>
@@ -873,20 +873,20 @@ export const productos = [
     <li>Consérvala en un lugar fresco y seco para mantener su calidad por más tiempo.</li>
   </ul>
         `,
-        opcionesCompra: {
-            tamanios: [3, 11, 12],
-            colores:[],
-            tallas: [],
-            sabores:[]
-        }
-    },
-    {
-        id: 17,
-        title: "Pantalón Corto Deportivo",
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        idCategoria: 1,
-        imageUrl: ".././assets/imagenes/shorts.png",
-        descripcion: `
+    opcionesCompra: {
+      tamanios: [3, 11, 12],
+      colores: [],
+      tallas: [],
+      sabores: []
+    }
+  },
+  {
+    id: 17,
+    title: "Pantalón Corto Deportivo",
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    idCategoria: 1,
+    imageUrl: ".././assets/imagenes/shorts.png",
+    descripcion: `
              <p><strong>Comodidad y libertad de movimiento para tus entrenamientos más intensos.</strong> Este pantalón corto deportivo es perfecto para actividades de alto rendimiento y climas cálidos. Diseñado con materiales de alta calidad, ofrece transpirabilidad, secado rápido y un ajuste cómodo que se adapta a cada movimiento. ¡Haz que tus entrenamientos sean más dinámicos y cómodos!</p>
   <ul>
     <li><strong>Material transpirable:</strong> Su tejido técnico permite una excelente ventilación, manteniéndote fresco y seco incluso en entrenamientos intensos.</li>
@@ -936,20 +936,20 @@ export const productos = [
     <li>Gracias a su diseño moderno, también es ideal para salidas casuales o relajadas.</li>
   </ul>
         `,
-        opcionesCompra: {
-            tallas: [1, 2, 3, 4],
-            colores: [1, 3, 4, 8],
-            tamanios: [],
-            sabores: []
-        }
-    },
-    {
-        id: 18,
-        title: "Suplemento de Óxido Nítrico",
-        idCategoria: 2,
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        imageUrl: ".././assets/imagenes/oxnitrico.png",
-        descripcion: `
+    opcionesCompra: {
+      tallas: [1, 2, 3, 4],
+      colores: [1, 3, 4, 8],
+      tamanios: [],
+      sabores: []
+    }
+  },
+  {
+    id: 18,
+    title: "Suplemento de Óxido Nítrico",
+    idCategoria: 2,
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    imageUrl: ".././assets/imagenes/oxnitrico.png",
+    descripcion: `
             <p><strong>Potencia tus entrenamientos con más energía y resistencia.</strong> Este suplemento de óxido nítrico está diseñado para mejorar el flujo sanguíneo, incrementar la entrega de oxígeno y nutrientes a los músculos, y potenciar tu rendimiento en entrenamientos de alta intensidad. Ideal para quienes buscan maximizar su fuerza, explosividad y resistencia.</p>
   <ul>
     <li><strong>Aumento del flujo sanguíneo:</strong> Gracias a su efecto vasodilatador, mejora la circulación, permitiendo que tus músculos reciban más oxígeno y nutrientes durante el ejercicio.</li>
@@ -994,20 +994,20 @@ export const productos = [
     <li>Consérvalo en un lugar fresco y seco, lejos de la luz solar directa.</li>
   </ul>
         `,
-        opcionesCompra: {
-            sabores: [1, 2, 3, 4],
-            tamanios: [3],
-            colores: [],
-            tallas: []
-        }
-    },
-    {
-        id: 19,
-        title: "Estera de Yoga Antideslizante",
-        idCategoria: 3,
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        imageUrl: ".././assets/imagenes/esterayoga.png",
-        descripcion: `
+    opcionesCompra: {
+      sabores: [1, 2, 3, 4],
+      tamanios: [3],
+      colores: [],
+      tallas: []
+    }
+  },
+  {
+    id: 19,
+    title: "Estera de Yoga Antideslizante",
+    idCategoria: 3,
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    imageUrl: ".././assets/imagenes/esterayoga.png",
+    descripcion: `
             <p><strong>Comodidad, estabilidad y agarre en cada postura.</strong> Diseñada para ofrecer el mejor soporte durante tus prácticas de yoga, estiramientos o meditación. Su superficie antideslizante proporciona seguridad, mientras que su acolchado suave cuida de tus articulaciones. ¡Haz que cada sesión sea más cómoda y productiva!</p>
   <ul>
     <li><strong>Superficie antideslizante:</strong> Brinda un excelente agarre, incluso en las posturas más exigentes o cuando sudas.</li>
@@ -1057,20 +1057,20 @@ export const productos = [
     <li>Complementa tu práctica con bloques de yoga o cojines de meditación.</li>
   </ul>
         `,
-        opcionesCompra: {
-            colores: [9, 4, 8, 1],
-            sabores: [],
-            tamanios: [],
-            tallas: []
-        }
-    },
-    {
-        id: 20,
-        title: "Reloj Deportivo con Monitoreo de Frecuencia Cardíaca",
-        idCategoria: 3,
-        price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
-        imageUrl: ".././assets/imagenes/reloj.png",
-        descripcion: `
+    opcionesCompra: {
+      colores: [9, 4, 8, 1],
+      sabores: [],
+      tamanios: [],
+      tallas: []
+    }
+  },
+  {
+    id: 20,
+    title: "Reloj Deportivo con Monitoreo de Frecuencia Cardíaca",
+    idCategoria: 3,
+    price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
+    imageUrl: ".././assets/imagenes/reloj.png",
+    descripcion: `
              <p><strong>Tu compañero ideal para entrenamientos inteligentes y efectivos.</strong> Diseñado para ayudarte a llevar un control completo de tu rendimiento físico. Este reloj combina tecnología avanzada y comodidad, ofreciendo monitoreo en tiempo real de tu frecuencia cardíaca, calorías quemadas y actividades diarias.</p>
   <ul>
     <li><strong>Monitoreo de frecuencia cardíaca:</strong> Mantén un registro preciso de tu ritmo cardíaco durante tus entrenamientos y actividades diarias.</li>
@@ -1125,11 +1125,11 @@ export const productos = [
     <li>Úsalo como guía para optimizar tus rutinas, pero escucha siempre a tu cuerpo.</li>
   </ul>
         `,
-        opcionesCompra: {
-            colores: [1, 3, 4, 10],
-            sabores: [],
-            tamanios: [],
-            tallas: []
-        }
+    opcionesCompra: {
+      colores: [1, 3, 4, 10],
+      sabores: [],
+      tamanios: [],
+      tallas: []
     }
+  }
 ]
