@@ -112,3 +112,27 @@
     border-color: #000000;
 }
 
+#btn__add-cart-wrapper{
+    padding: .5rem;
+}
+
+#btn-add-cart{
+    margin: 0 0 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-add-cart:hover{
+    transform: translateY(-5px);
+}
+#btn-add-cart:active{
+    scale: 0.95;
+}
+

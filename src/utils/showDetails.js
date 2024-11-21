@@ -81,9 +81,11 @@ const renderProductDetails = () => {
                     `
                 : ""
             }
+            <div id="btn__add-cart-wrapper"><button id="btn-add-cart">Agregar al carrito</button></div>
                 </div>
-
+                    
                 </div>
+                
         </div>
     `
         productDetailContainer.innerHTML = template
