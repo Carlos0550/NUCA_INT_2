@@ -48,4 +48,25 @@ export const tamanios = [
         id: 12,
         name: "1000gr"
     },
+
+    {
+        id: 13,
+        name: "5kg"
+    },
+    {
+        id: 14,
+        name: "10kg"
+    },
+    {
+        id: 15,
+        name: "12kg"
+    },
+    {
+        id: 16,
+        name: "15kg"
+    },
+    {
+        id: 17,
+        name: "20kg"
+    },
 ]
