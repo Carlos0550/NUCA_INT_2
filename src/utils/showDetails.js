@@ -96,6 +96,7 @@ const renderProductDetails = () => {
 document.addEventListener("DOMContentLoaded", () => {
     renderProductDetails()
     const buttonSelected = document.querySelectorAll(".details-options__button");
+    
 
     const selectedOptions = {
         tamanios: null,
@@ -103,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
         colores: null,
         sabores: null
     }
-
     if(buttonSelected){
         buttonSelected.forEach(element => {
             element.addEventListener("click", (e) => {
@@ -129,6 +129,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    const btnAddCart = document.getElementById("btn-add-cart")
+    console.log(btnAddCart)
+    btnAddCart.addEventListener("click", ()=>{
+        const activeButtons = document.querySelectorAll(".details-options__button.active");        
+        
+        activeButtons.forEach(b => b.classList.remove("active"))
+        for(const key in selectedOptions){
+            selectedOptions[key] = null
+        }
+        console.log(selectedOptions)
+    })
 })
 
 
