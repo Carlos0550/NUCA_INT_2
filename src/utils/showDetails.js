@@ -1,6 +1,6 @@
 import { productos } from "./products.js"
 import { sabores as saboresProductos } from "./sabores.js"
-import { tamanios as tamanioProductos } from "./tamanios.js"
+import { tamanios as tamanioProductos, tamanios } from "./tamanios.js"
 import { coloresProductos as coloresPr } from "./coloresProductos.js"
 import { tallas as tallasProductos } from "./tallas.js"
 import { capitaliceStrings } from "./capitaliceStrings.js"
@@ -95,15 +95,38 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProductDetails()
     const buttonSelected = document.querySelectorAll(".details-options__button");
 
-    buttonSelected.forEach(element => {
-        element.addEventListener("click", (e) => {
-            const buttonValue = e.target.value
-            const buttonType = element.getAttribute("type")
+    const selectedOptions = {
+        tamanios: null,
+        talles: null,
+        colores: null,
+        sabores: null
+    }
 
-            element.classList.toggle("active");
-            console.log(`Botón de tipo ${buttonType} clickeado con valor: ${buttonValue}`);
+    if(buttonSelected){
+        buttonSelected.forEach(element => {
+            element.addEventListener("click", (e) => {
+                const buttonValue = e.target.value;
+                const buttonType = element.getAttribute("type");
+    
+                buttonSelected.forEach(btn => {
+                    if (btn.getAttribute("type") === buttonType) {
+                        btn.classList.remove("active");
+                    }
+                });
+    
+                if (selectedOptions[buttonType] === buttonValue) {
+                    selectedOptions[buttonType] = null;
+                    element.classList.remove("active");
+                } else {
+                    selectedOptions[buttonType] = buttonValue; 
+                    element.classList.add("active");
+                }
+    
+                console.log(`Botón de tipo ${buttonType} clickeado con valor: ${buttonValue}`);
+                console.log("Opciones seleccionadas:", selectedOptions);
+            });
         });
-    });
+    }
 })
 
 
