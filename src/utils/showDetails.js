@@ -7,9 +7,8 @@ const renderProductDetails = () => {
     const urlParams = new URLSearchParams(location.search)
     const productId = urlParams.get("productId")
 
-    console.log(productId)
     const selectedProduct = productos.find((producto) => producto.id === Number(productId))
-
+    console.log(selectedProduct)
     if (selectedProduct) {
         const template = `
         <div class="details__wrapper">

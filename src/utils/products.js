@@ -1,3 +1,5 @@
+ 
+
 export const productos = [
     {
         id: 1,
@@ -44,7 +46,13 @@ export const productos = [
     <li>No usar lejía.</li>
     <li>Secar al aire o a baja temperatura.</li>
     <li>No planchar.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            colores: [1, 2, 3, 4],
+            tallas: [],
+            tamanios: [],
+            sabores: []
+        }
     },
     {
         id: 2,
@@ -91,7 +99,13 @@ export const productos = [
     <li>No usar suavizantes ni lejía.</li>
     <li>Secar al aire para prolongar la vida útil del tejido.</li>
     <li>No planchar ni lavar en seco.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            colores: [1, 5, 6],
+            tallas: [],
+            tamanios: [],
+            sabores: []
+        }
     },
     {
         id: 3,
@@ -136,7 +150,13 @@ export const productos = [
   <ul>
     <li>Úsalo en recetas como pancakes o smoothies para una dieta más versátil.</li>
     <li>Complementa su uso con una alimentación balanceada para mejores resultados.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            sabores: [3],
+            tamanios: [1, 2],
+            tallas: [],
+            colores: []
+        }
     },
     {
         id: 4,
@@ -182,7 +202,13 @@ export const productos = [
     <li>Hidrátate adecuadamente mientras consumes creatina para maximizar sus beneficios.</li>
     <li>Úsala de manera constante durante 4-6 semanas para resultados óptimos.</li>
     <li>Perfecta para fases de carga y mantenimiento según tu plan de entrenamiento.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            sabores: [3],
+            tamanios: [3, 4],
+            colores: [],
+            talles: []
+        }
     },
     {
         id: 5,
@@ -232,7 +258,13 @@ export const productos = [
     <li>Combínalos con tu batido de proteína para optimizar el rendimiento y la recuperación.</li>
     <li>Ideales para entrenamientos en ayunas, ya que protegen la masa muscular.</li>
     <li>Complemento perfecto en programas de pérdida de grasa y definición.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            sabores: [3],
+            tamanios: [3, 5],
+            tallas: [],
+            colores: []
+        }
     },
     {
         id: 6,
@@ -278,7 +310,13 @@ export const productos = [
     <li>Límpialos regularmente con un paño húmedo para mantenerlos en óptimas condiciones.</li>
     <li>No los laves en lavadora para evitar dañar los materiales.</li>
     <li>Déjalos secar al aire después de cada uso para prevenir malos olores.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tallas: [1, 2, 3, 4],
+            colores: [1, 3, 7],
+            tamanios: [],
+            sabores: []
+        }
     },
     {
         id: 7,
@@ -328,7 +366,13 @@ export const productos = [
     <li>Practica con sesiones cortas al principio para acostumbrarte a su velocidad y fluidez.</li>
     <li>Utiliza calzado adecuado para proteger tus articulaciones mientras saltas.</li>
     <li>Evita superficies abrasivas para prolongar la vida útil del recubrimiento.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tallas: [1, 2, 3, 4],
+            colores: [1, 4, 7],
+            sabores: [],
+            tamanios: []
+        }
     },
     {
         id: 8,
@@ -378,7 +422,13 @@ export const productos = [
     <li>Asegúrate de no estirarla más allá de su capacidad para evitar que pierda elasticidad.</li>
     <li>Guárdala en un lugar fresco y seco para mantener su durabilidad.</li>
     <li>Para una mayor intensidad, combina diferentes resistencias en una misma rutina de ejercicios.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            colores: [7, 4, 8],
+            tallas: [],
+            tamanios: [],
+            sabores:[]
+        }
     },
     {
         id: 9,
@@ -424,7 +474,13 @@ export const productos = [
     <li>Asegúrate de ajustar la rodillera correctamente para que quede ceñida pero no incómoda.</li>
     <li>Lávalo a mano y evita el uso de secadora para mantener la elasticidad del material.</li>
     <li>Si el dolor persiste o se intensifica, consulta con un profesional de la salud.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tamanios: [1, 2, 3, 4],
+            colores: [1, 3, 4],
+            sabores:[],
+            tallas: []
+        }
     },
     {
         id: 10,
@@ -474,7 +530,13 @@ export const productos = [
     <li>Para evitar olores, limpia el shaker después de cada uso con agua tibia y jabón suave.</li>
     <li>Si no deseas que tu suplemento se quede pegado en las paredes, agrega el líquido primero y luego el polvo.</li>
     <li>Utiliza el shaker para mezclar no solo suplementos, sino también bebidas como jugos o batidos caseros.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tamanios: [6],
+            colores: [1, 2, 4],
+            talles: [],
+            sabores: []
+        }
     },
     {
         id: 11,
@@ -524,7 +586,13 @@ export const productos = [
     <li>Para mayor durabilidad, limpia las zapatillas después de cada uso y mantenlas secas.</li>
     <li>Elige el tamaño adecuado para evitar molestias y asegurar un ajuste cómodo durante las carreras.</li>
     <li>Si corres en terrenos irregulares o mojados, asegúrate de revisar la suela para evitar desgastes excesivos.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tamanios: [6],
+            colores: [1, 4, 3],
+            tallas: [],
+            sabores: []
+        }
     },
     {
         id: 12,
@@ -574,7 +642,13 @@ export const productos = [
     <li>Cuando ajustes el peso, asegúrate de que todos los discos estén firmemente sujetos para evitar accidentes.</li>
     <li>Para un mejor rendimiento, limpia las mancuernas regularmente y asegúrate de mantenerlas en un lugar seco para evitar la corrosión.</li>
     <li>Si entrenas en casa, asegúrate de tener un espacio adecuado para maniobrar las mancuernas de forma segura.</li>
-  </ul>`
+  </ul>`,
+  opcionesCompra:{
+    sabores:[],
+    tamanios: [],
+    talles: [],
+    colores:[]
+  }
     },
     {
         id: 13,
@@ -624,7 +698,13 @@ export const productos = [
     <li>Combina el suplemento con una rutina de ejercicios cardiovasculares para potenciar los efectos de quema de grasa.</li>
     <li>Si eres sensible a otros suplementos, comienza con una dosis menor para evaluar cómo responde tu cuerpo.</li>
     <li>Para optimizar los resultados, asegúrate de mantener una hidratación adecuada durante tus entrenamientos.</li>
-  </ul>`
+  </ul>`,
+  opcionesCompra:{
+    sabores:[],
+    tamanios: [],
+    talles: [],
+    colores:[]
+  }
     },
     {
         id: 14,
@@ -674,7 +754,13 @@ export const productos = [
     <li>Si planeas usarla para entrenamientos de press de banca con pesos elevados, considera usar un soporte adicional como un rack de pesas para mayor seguridad.</li>
     <li>Para maximizar la durabilidad, limpia la banqueta regularmente y evita dejarla expuesta a condiciones de humedad.</li>
     <li>Cuando no esté en uso, pliega la banqueta para ahorrar espacio y mantenerla en buen estado.</li>
-  </ul>`
+  </ul>`,
+  opcionesCompra:{
+    sabores:[],
+    tamanios: [],
+    talles: [],
+    colores:[]
+  }
     },
     {
         id: 15,
@@ -728,7 +814,13 @@ export const productos = [
     <li>Llena la botella con hielo o agua fría antes de tus entrenamientos para disfrutar de una bebida refrescante durante toda la sesión.</li>
     <li>Usa la botella para mantener tu té o café caliente durante todo el día, perfecta para llevar al trabajo o a la oficina.</li>
     <li>Si viajas frecuentemente, lleva tu botella para reducir el uso de botellas plásticas de un solo uso y contribuir al cuidado del medio ambiente.</li>
-  </ul>`
+  </ul>`,
+        opcionesCompra: {
+            tamanios: [6],
+            colores: [1, 11, 4, 10],
+            tallas: [],
+            sabores:[]
+        }
     },
     {
         id: 16,
@@ -736,7 +828,57 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 2,
         imageUrl: ".././assets/imagenes/glutamina.jpeg",
-        descripcion: "Ayuda a mejorar la recuperación muscular y fortalecer tu sistema inmune. Ideal para después de entrenamientos intensos, la Glutamina te ayuda a minimizar el daño muscular y maximizar tus ganancias. ¡Recupérate más rápido y con menos dolor!"
+        descripcion: `
+             <p><strong>La Glutamina es tu aliada para la recuperación y el bienestar.</strong> Este suplemento esencial ayuda a mejorar la recuperación muscular después de entrenamientos intensos y a fortalecer tu sistema inmunológico, manteniéndote en forma incluso después de las sesiones más exigentes. Ideal para quienes buscan maximizar sus ganancias y minimizar el dolor muscular.</p>
+  <ul>
+    <li><strong>Recuperación acelerada:</strong> Reduce el tiempo de recuperación tras entrenamientos intensos al minimizar el daño muscular y estimular la síntesis de proteínas.</li>
+    <li><strong>Fortalecimiento del sistema inmune:</strong> Ayuda a mantener tu sistema inmunológico en óptimas condiciones, especialmente durante períodos de estrés físico elevado.</li>
+    <li><strong>Prevención del catabolismo muscular:</strong> La Glutamina protege tus músculos al evitar que el cuerpo utilice tejido muscular como fuente de energía durante entrenamientos prolongados.</li>
+    <li><strong>Versatilidad:</strong> Se puede mezclar fácilmente con otros suplementos como proteínas, BCAA's o bebidas energéticas para personalizar tu rutina de suplementación.</li>
+  </ul>
+  <h3>Beneficios:</h3>
+  <p>Con este suplemento disfrutarás de:</p>
+  <ol>
+    <li>Menos dolor muscular después de entrenar, permitiéndote volver al gimnasio con más frecuencia y energía.</li>
+    <li>Un sistema inmunológico más fuerte, ayudando a evitar enfermedades comunes mientras te mantienes activo.</li>
+    <li>Mayor resistencia durante entrenamientos intensivos al mantener los niveles de Glutamina óptimos en tu cuerpo.</li>
+  </ol>
+  <h3>Especificaciones:</h3>
+  <table>
+    <tr>
+      <th>Presentación</th>
+      <td>Polvo o cápsulas</td>
+    </tr>
+    <tr>
+      <th>Contenido neto</th>
+      <td>300 g / 500 g / 1 kg (según presentación)</td>
+    </tr>
+    <tr>
+      <th>Uso recomendado</th>
+      <td>5 g después del entrenamiento o según las indicaciones de un profesional de la salud</td>
+    </tr>
+    <tr>
+      <th>Sabores disponibles</th>
+      <td>Sin sabor (neutro)</td>
+    </tr>
+  </table>
+  <h3>Recomendaciones de uso:</h3>
+  <p>
+    Disuelve una cucharada de 5 gramos en agua o tu bebida favorita después del entrenamiento. Para mejores resultados, úsalo en combinación con una dieta equilibrada y un plan de entrenamiento adecuado.
+  </p>
+  <h3>Consejos adicionales:</h3>
+  <ul>
+    <li>Incluye la Glutamina en tu rutina diaria si realizas entrenamientos intensivos o estás en un programa de ganancia muscular.</li>
+    <li>Úsala después de sesiones de cardio o pesas para optimizar la recuperación.</li>
+    <li>Consérvala en un lugar fresco y seco para mantener su calidad por más tiempo.</li>
+  </ul>
+        `,
+        opcionesCompra: {
+            tamanios: [3, 11, 12],
+            colores:[],
+            tallas: [],
+            sabores:[]
+        }
     },
     {
         id: 17,
@@ -744,7 +886,62 @@ export const productos = [
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         idCategoria: 1,
         imageUrl: ".././assets/imagenes/shorts.png",
-        descripcion: "Cómodo y transpirable, ideal para entrenamientos en climas cálidos o actividades de alto rendimiento. Su diseño con tecnología de secado rápido y su ajuste perfecto lo hacen imprescindible para el gimnasio. ¡Dale libertad a tus piernas!"
+        descripcion: `
+             <p><strong>Comodidad y libertad de movimiento para tus entrenamientos más intensos.</strong> Este pantalón corto deportivo es perfecto para actividades de alto rendimiento y climas cálidos. Diseñado con materiales de alta calidad, ofrece transpirabilidad, secado rápido y un ajuste cómodo que se adapta a cada movimiento. ¡Haz que tus entrenamientos sean más dinámicos y cómodos!</p>
+  <ul>
+    <li><strong>Material transpirable:</strong> Su tejido técnico permite una excelente ventilación, manteniéndote fresco y seco incluso en entrenamientos intensos.</li>
+    <li><strong>Tecnología de secado rápido:</strong> Diseñado para absorber y evaporar rápidamente el sudor, ayudándote a mantener la comodidad durante tus sesiones de ejercicio.</li>
+    <li><strong>Ajuste perfecto:</strong> Cuenta con una cintura elástica ajustable que se adapta a diferentes tipos de cuerpo y proporciona un ajuste seguro sin restringir el movimiento.</li>
+    <li><strong>Bolsillos funcionales:</strong> Incluye bolsillos laterales profundos para guardar tus objetos esenciales, como llaves o el teléfono, mientras entrenas.</li>
+    <li><strong>Versatilidad:</strong> Ideal para gimnasio, correr, practicar deportes o simplemente relajarte en casa.</li>
+  </ul>
+  <h3>Beneficios:</h3>
+  <p>Con este pantalón corto disfrutarás de:</p>
+  <ol>
+    <li>Mayor libertad de movimiento gracias a su diseño ergonómico.</li>
+    <li>Una sensación de frescura y comodidad durante toda tu rutina.</li>
+    <li>Practicidad y estilo tanto dentro como fuera del gimnasio.</li>
+  </ol>
+  <h3>Especificaciones:</h3>
+  <table>
+    <tr>
+      <th>Material</th>
+      <td>Poliéster 100% de alta calidad</td>
+    </tr>
+    <tr>
+      <th>Tecnología</th>
+      <td>Secado rápido y tejido transpirable</td>
+    </tr>
+    <tr>
+      <th>Colores disponibles</th>
+      <td>Negro, gris, azul, verde</td>
+    </tr>
+    <tr>
+      <th>Tallas</th>
+      <td>S, M, L, XL</td>
+    </tr>
+    <tr>
+      <th>Diseño</th>
+      <td>Cintura elástica con cordón ajustable</td>
+    </tr>
+  </table>
+  <h3>Recomendaciones de uso:</h3>
+  <p>
+    Lava el pantalón a máquina con agua fría para mantener la calidad del tejido. Evita el uso de blanqueadores y sécalo a baja temperatura para una mayor durabilidad.
+  </p>
+  <h3>Consejos adicionales:</h3>
+  <ul>
+    <li>Úsalo para sesiones de cardio, pesas o yoga, adaptándose a cualquier tipo de actividad física.</li>
+    <li>Combínalo con camisetas deportivas de secado rápido para un conjunto completo y cómodo.</li>
+    <li>Gracias a su diseño moderno, también es ideal para salidas casuales o relajadas.</li>
+  </ul>
+        `,
+        opcionesCompra: {
+            tallas: [1, 2, 3, 4],
+            colores: [1, 3, 4, 8],
+            tamanios: [],
+            sabores: []
+        }
     },
     {
         id: 18,
@@ -752,7 +949,57 @@ export const productos = [
         idCategoria: 2,
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         imageUrl: ".././assets/imagenes/oxnitrico.png",
-        descripcion: "Aumenta tu energía y resistencia con este suplemento de óxido nítrico. Perfecto para mejorar el rendimiento en entrenamientos de alta intensidad. ¡Siente el poder de un entrenamiento más explosivo y con más resistencia!"
+        descripcion: `
+            <p><strong>Potencia tus entrenamientos con más energía y resistencia.</strong> Este suplemento de óxido nítrico está diseñado para mejorar el flujo sanguíneo, incrementar la entrega de oxígeno y nutrientes a los músculos, y potenciar tu rendimiento en entrenamientos de alta intensidad. Ideal para quienes buscan maximizar su fuerza, explosividad y resistencia.</p>
+  <ul>
+    <li><strong>Aumento del flujo sanguíneo:</strong> Gracias a su efecto vasodilatador, mejora la circulación, permitiendo que tus músculos reciban más oxígeno y nutrientes durante el ejercicio.</li>
+    <li><strong>Mayor energía y resistencia:</strong> Reduce la fatiga muscular, permitiéndote entrenar por más tiempo y con mayor intensidad.</li>
+    <li><strong>Rendimiento explosivo:</strong> Mejora la fuerza y la potencia en ejercicios de alta intensidad, como levantamiento de pesas o sprints.</li>
+    <li><strong>Apoyo en la recuperación:</strong> Facilita la eliminación de toxinas musculares, ayudando a una recuperación más rápida tras entrenamientos exigentes.</li>
+  </ul>
+  <h3>Beneficios:</h3>
+  <p>Con este suplemento disfrutarás de:</p>
+  <ol>
+    <li>Entrenamientos más largos e intensos, con menor sensación de agotamiento.</li>
+    <li>Incremento de la vascularización, destacando la definición muscular.</li>
+    <li>Mejoras significativas en fuerza y resistencia física.</li>
+  </ol>
+  <h3>Especificaciones:</h3>
+  <table>
+    <tr>
+      <th>Formato</th>
+      <td>Polvo</td>
+    </tr>
+    <tr>
+      <th>Contenido neto</th>
+      <td>300 g / 60 cápsulas (según presentación)</td>
+    </tr>
+    <tr>
+      <th>Uso recomendado</th>
+      <td>1 dosis 30 minutos antes del entrenamiento</td>
+    </tr>
+    <tr>
+      <th>Sabores disponibles</th>
+      <td>Frutas cítricas, neutro</td>
+    </tr>
+  </table>
+  <h3>Recomendaciones de uso:</h3>
+  <p>
+    Toma una dosis 30 minutos antes del entrenamiento para aprovechar al máximo sus beneficios. Combínalo con una dieta equilibrada y un programa de entrenamiento para mejores resultados.
+  </p>
+  <h3>Consejos adicionales:</h3>
+  <ul>
+    <li>Úsalo en días de entrenamiento de fuerza o alta intensidad para maximizar su impacto.</li>
+    <li>Mantén una adecuada hidratación para optimizar los efectos del suplemento.</li>
+    <li>Consérvalo en un lugar fresco y seco, lejos de la luz solar directa.</li>
+  </ul>
+        `,
+        opcionesCompra: {
+            sabores: [1, 2, 3, 4],
+            tamanios: [3],
+            colores: [],
+            tallas: []
+        }
     },
     {
         id: 19,
@@ -760,7 +1007,62 @@ export const productos = [
         idCategoria: 3,
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         imageUrl: ".././assets/imagenes/esterayoga.png",
-        descripcion: "Perfecta para tus rutinas de yoga o estiramientos. Esta estera antideslizante asegura un buen agarre y comodidad en cada postura. ¡Mantén el equilibrio y la estabilidad durante tus sesiones de yoga!"
+        descripcion: `
+            <p><strong>Comodidad, estabilidad y agarre en cada postura.</strong> Diseñada para ofrecer el mejor soporte durante tus prácticas de yoga, estiramientos o meditación. Su superficie antideslizante proporciona seguridad, mientras que su acolchado suave cuida de tus articulaciones. ¡Haz que cada sesión sea más cómoda y productiva!</p>
+  <ul>
+    <li><strong>Superficie antideslizante:</strong> Brinda un excelente agarre, incluso en las posturas más exigentes o cuando sudas.</li>
+    <li><strong>Amortiguación óptima:</strong> Su acolchado de alta densidad protege tus rodillas, codos y espalda, reduciendo el impacto en las articulaciones.</li>
+    <li><strong>Material duradero:</strong> Fabricada con materiales ecológicos y resistentes, asegura una larga vida útil, incluso con uso intensivo.</li>
+    <li><strong>Ligera y portátil:</strong> Fácil de transportar gracias a su diseño liviano y correa de transporte incluida.</li>
+    <li><strong>Versatilidad:</strong> Ideal para yoga, pilates, ejercicios de estiramiento o entrenamiento en casa.</li>
+  </ul>
+  <h3>Beneficios:</h3>
+  <p>Al usar esta estera, disfrutarás de:</p>
+  <ol>
+    <li>Mayor estabilidad en cada postura, gracias a su diseño antideslizante.</li>
+    <li>Protección adicional para tus articulaciones y comodidad prolongada.</li>
+    <li>Un accesorio duradero y fácil de limpiar, ideal para rutinas diarias.</li>
+  </ol>
+  <h3>Especificaciones:</h3>
+  <table>
+    <tr>
+      <th>Material</th>
+      <td>TPE ecológico / PVC premium</td>
+    </tr>
+    <tr>
+      <th>Dimensiones</th>
+      <td>183 cm x 61 cm x 6 mm (largo x ancho x grosor)</td>
+    </tr>
+    <tr>
+      <th>Colores disponibles</th>
+      <td>Morado, azul, verde, negro</td>
+    </tr>
+    <tr>
+      <th>Accesorios</th>
+      <td>Correa ajustable para transporte</td>
+    </tr>
+    <tr>
+      <th>Características adicionales</th>
+      <td>Resistente al agua y fácil de limpiar</td>
+    </tr>
+  </table>
+  <h3>Recomendaciones de uso:</h3>
+  <p>
+    Limpia la estera después de cada uso con un paño húmedo o soluciones naturales de limpieza para mantenerla higiénica y en buen estado. Déjala secar al aire antes de enrollarla.
+  </p>
+  <h3>Consejos adicionales:</h3>
+  <ul>
+    <li>Úsala sobre una superficie plana para garantizar el máximo agarre.</li>
+    <li>Practica sin zapatos para prolongar la vida útil del material.</li>
+    <li>Complementa tu práctica con bloques de yoga o cojines de meditación.</li>
+  </ul>
+        `,
+        opcionesCompra: {
+            colores: [9, 4, 8, 1],
+            sabores: [],
+            tamanios: [],
+            tallas: []
+        }
     },
     {
         id: 20,
@@ -768,6 +1070,66 @@ export const productos = [
         idCategoria: 3,
         price: Math.floor(Math.random() * (8000 - 1000 + 1)) + 1000,
         imageUrl: ".././assets/imagenes/reloj.png",
-        descripcion: "Mantén un seguimiento de tu rendimiento con este reloj deportivo. Con monitoreo de frecuencia cardíaca, contador de calorías y seguimiento de actividades. ¡Esencial para entrenamientos más inteligentes y efectivos!"
+        descripcion: `
+             <p><strong>Tu compañero ideal para entrenamientos inteligentes y efectivos.</strong> Diseñado para ayudarte a llevar un control completo de tu rendimiento físico. Este reloj combina tecnología avanzada y comodidad, ofreciendo monitoreo en tiempo real de tu frecuencia cardíaca, calorías quemadas y actividades diarias.</p>
+  <ul>
+    <li><strong>Monitoreo de frecuencia cardíaca:</strong> Mantén un registro preciso de tu ritmo cardíaco durante tus entrenamientos y actividades diarias.</li>
+    <li><strong>Contador de calorías:</strong> Calcula las calorías quemadas para que puedas ajustar tu dieta y rutina de ejercicios según tus objetivos.</li>
+    <li><strong>Seguimiento de actividades:</strong> Registra pasos, distancia recorrida y tiempo activo para evaluar tu progreso.</li>
+    <li><strong>Notificaciones inteligentes:</strong> Sincronízalo con tu smartphone para recibir alertas de llamadas, mensajes y recordatorios mientras te ejercitas.</li>
+    <li><strong>Batería de larga duración:</strong> Disfruta de días de uso continuo con una sola carga.</li>
+    <li><strong>Resistencia al agua:</strong> Ideal para actividades al aire libre y deportes acuáticos (resistente hasta 50 m).</li>
+  </ul>
+  <h3>Beneficios:</h3>
+  <p>Con este reloj deportivo, podrás:</p>
+  <ol>
+    <li>Optimizar tus entrenamientos al controlar tus zonas de frecuencia cardíaca.</li>
+    <li>Monitorear tu actividad diaria para mantenerte motivado y alcanzar tus metas.</li>
+    <li>Recibir datos precisos para mejorar tu rendimiento físico.</li>
+  </ol>
+  <h3>Especificaciones:</h3>
+  <table>
+    <tr>
+      <th>Pantalla</th>
+      <td>OLED táctil a color</td>
+    </tr>
+    <tr>
+      <th>Conectividad</th>
+      <td>Bluetooth 5.0</td>
+    </tr>
+    <tr>
+      <th>Compatibilidad</th>
+      <td>iOS y Android</td>
+    </tr>
+    <tr>
+      <th>Duración de la batería</th>
+      <td>Hasta 7 días</td>
+    </tr>
+    <tr>
+      <th>Resistencia al agua</th>
+      <td>5 ATM (hasta 50 metros)</td>
+    </tr>
+    <tr>
+      <th>Colores disponibles</th>
+      <td>Negro, gris, azul, rosa</td>
+    </tr>
+  </table>
+  <h3>Recomendaciones de uso:</h3>
+  <p>
+    Ajusta la correa del reloj cómodamente para asegurar lecturas precisas de tu frecuencia cardíaca. Descarga la app compatible para sincronizar tus datos y llevar un registro más detallado de tu progreso.
+  </p>
+  <h3>Consejos adicionales:</h3>
+  <ul>
+    <li>Cárgalo completamente antes de usarlo por primera vez.</li>
+    <li>Evita usarlo en saunas o agua caliente para prolongar su vida útil.</li>
+    <li>Úsalo como guía para optimizar tus rutinas, pero escucha siempre a tu cuerpo.</li>
+  </ul>
+        `,
+        opcionesCompra: {
+            colores: [1, 3, 4, 10],
+            sabores: [],
+            tamanios: [],
+            tallas: []
+        }
     }
 ]
