@@ -102,7 +102,7 @@ export const productos = [
   </ul>`,
     opcionesCompra: {
       colores: [1, 5, 6],
-      tallas: [],
+      tallas: [1,2,3,4],
       tamanios: [],
       sabores: []
     }
