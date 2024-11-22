@@ -114,6 +114,9 @@
 
 #btn__add-cart-wrapper{
     padding: .5rem;
+    display: flex;
+    align-self: self-start;
+    gap: .5rem;
 }
 
 #btn-add-cart{
@@ -134,5 +137,31 @@
 }
 #btn-add-cart:active{
     scale: 0.95;
+}
+
+#plusIcon{
+    padding: .5rem;
+    background-color: rgb(233, 124, 0);
+    border-radius: .5rem;
+}
+
+#minusIcon{
+    padding: .5rem;
+    background-color: rgb(233, 27, 0);
+    border-radius: .5rem;
+}
+
+#resume{
+    
+    max-height: 25vh;
+}
+
+#resume h4{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.summary_p{
+    color: white;
 }
 
