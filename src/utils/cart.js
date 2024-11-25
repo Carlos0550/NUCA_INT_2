@@ -1,33 +1,48 @@
 import { productos } from "./products.js";
 
-export let cartInfo = {
-    products: []
-};
-
 export const updateCart = (productId, options, quantity) => {
     const addedProduct = productos.find(producto => producto.id === parseInt(productId))
 
-    console.log("Producto añadido: ", addedProduct)
-    console.log("Opciones de compra: ", options)
-    console.log("Cantidad: ", quantity)
-
-    const existingProductIndex = cartInfo.products.findIndex(
-        (product) => product.productId === productId
-    );
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    
+    const existingProductIndex = cart.findIndex(item => item.productId === parseInt(productId))
+    const productToAdd = {
+        productId: addedProduct.id,
+        title: addedProduct.title,
+        price: addedProduct.price,
+        options, 
+        quantity 
+    };
 
     if (existingProductIndex !== -1) {
-
-        cartInfo.products[existingProductIndex] = {
-            ...cartInfo.products[existingProductIndex],
-            productOptions: options,
-        };
+        console.log("aqui")
+        cart[existingProductIndex].quantity =quantity;
+        cart[existingProductIndex].options = { ...cart[existingProductIndex].options, options };
     } else {
-
-        cartInfo.products.push({
-            productId,
-            productOptions: options,
-        });
+        console.log("Push")
+        cart.push(productToAdd);
     }
 
-    return cartInfo; 
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    console.log("Carrito actualizado: ", cart);
 };
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggle-btn');
+    const carritoLink = document.getElementById('carrito-link');
+    const cartContainer = document.getElementById("cart-content")
+
+    const savedCart = JSON.parse(localStorage.getItem("cart"))
+    console.log(savedCart)
+
+    carritoLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        sidebar.classList.toggle('active');
+    });
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+})
