@@ -165,3 +165,41 @@
     color: white;
 }
 
+/* SIDEBAR */
+
+
+#sidebar {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: red;
+    z-index: 9;
+    transition: transform 0.3s ease-in-out;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.cart-title{
+    color: white;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#sidebar.active {
+    transform: translateX(-250px);
+}
+#toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#content {
+    padding: 20px;
+    transition: margin-right 0.3s ease-in-out;
+}
