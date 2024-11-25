@@ -4,7 +4,7 @@ import { tamanios as tamanioProductos } from "./tamanios.js";
 import { coloresProductos as coloresPr } from "./coloresProductos.js";
 import { tallas as tallasProductos } from "./tallas.js";
 import { capitaliceStrings } from "./capitaliceStrings.js";
-import { cartInfo, updateCart } from "./cart.js";
+import { updateCart } from "./cart.js";
 const selectedOptions = {
     tamanios: null,
     tallas: null,
@@ -13,6 +13,8 @@ const selectedOptions = {
 };
 
 let selectedQuantity = 1;
+
+let total = 0;
 
 const urlParams = new URLSearchParams(location.search);
 const productId = urlParams.get("productId");
@@ -35,13 +37,14 @@ const searchValue = (key, value) => {
 
 const renderPurchaseSummary = () => {
     const resumeContainer = document.getElementById("resume");
+    const selectedProduct = productos.find(producto => producto.id === parseInt(productId))
     if (resumeContainer) {
         const hasSelectedOptions = Object.values(selectedOptions).some(value => value !== null);
-        console.log(hasSelectedOptions)
         const optionsSummary = Object.entries(selectedOptions)
             .filter(([key, value]) => value !== null)
             .map(([key, value]) => searchValue(key, value))
             .join("");
+        total = selectedProduct ? parseFloat(selectedProduct.price) * parseInt(selectedQuantity) : 0
 
         resumeContainer.innerHTML = `
             <h4>Resumen de compra</h4>
@@ -49,6 +52,7 @@ const renderPurchaseSummary = () => {
                 ? optionsSummary
                 : "<p class='summary_p'>No hay opciones seleccionadas.</p>"}
             <p class="summary_p"><strong>Cantidad:</strong> ${selectedQuantity}</p>
+            <p class="summary_p"><strong>${total.toLocaleString("es-AR",{style: "currency", currency: "ARS"})}</strong></p>
         `;
     }
 };
@@ -106,6 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+    
 });
 
 const renderProductDetails = () => {
