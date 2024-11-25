@@ -1,4 +1,4 @@
-export function selectRandomProducts(productos, cantidad = 6) {
+export function selectRandomProducts(productos, cantidad = 8) {
     const seleccionados = new Set()
 
     const limite = Math.min(cantidad, productos.length)
