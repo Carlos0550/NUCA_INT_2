@@ -170,14 +170,20 @@
 
 #sidebar {
     position: fixed;
-    right: -250px;
+    right: -400px;
     top: 0;
-    width: 250px;
+    width: 400px;
     height: 100%;
     background-color: red;
     z-index: 9;
     transition: transform 0.3s ease-in-out;
     border-radius: .5rem 0 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .cart-title{
@@ -187,7 +193,7 @@
 }
 
 #sidebar.active {
-    transform: translateX(-250px);
+    transform: translateX(-400px);
 }
 #toggle-btn {
     position: absolute;
@@ -202,4 +208,92 @@
 #content {
     padding: 20px;
     transition: margin-right 0.3s ease-in-out;
+}
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#cart-content {
+    display: flex;
+    align-items: flex-start;
+    width: 350px;;
+    gap: 20px;
+    background: #2f2f2f;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.product_p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.buttons-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttons-box button {
+    background: #eee;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-box button:first-child{
+    background-color: #cc8b00;
+}
+.buttons-box button:nth-child(2){
+    background-color: #000000;
+}
+
+.buttons-box button img {
+    width: 20px;
+    height: 20px;
+}
+
+.product-options {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.product-options p {
+    margin: 4px 0;
+}
+
+#dynamic-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
