@@ -3,6 +3,7 @@ import { addFilters } from "./utils/generateFilters.js";
 import { selectRandomProducts } from "./utils/randomOffers.js";
 import { initSlider } from "./utils/slider.js";
 import { renderProducts } from "./utils/renderProducts.js";
+import { openSidebar, renderCartItems } from "./utils/cart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const productosAleatorios = selectRandomProducts(productos);
@@ -10,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.getElementById("shop__products");
     const filterContainer = document.getElementById("filter-container");
     filterContainer.innerHTML = addFilters();
+
+    
 
     const inputSearch = document.getElementById("filter__search");
     const categoryFilter = document.getElementById("filter__options");
@@ -41,6 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     initSlider();
+    
+    console.log("Se ejecuta desde shop.js que carga la pagina principal")
+    openSidebar()    
+
 });
 
+    
 window.addEventListener("resize", initSlider);
